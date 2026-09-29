@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="When low-code and no-code platforms make sense for business software, where they fall short, and how to combine them with custom development for the best of both." />
+  <title>Low-Code/No-Code Platforms: Accelerating Digital Transformation for SMEs and Enterprises — Online Pro Max Blog</title>
+  <link rel="stylesheet" href="blog-post.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+<div id="scroll-progress"></div>
+<a id="whatsapp-btn" href="https://wa.me/971552594585" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<!-- ══ MOBILE NAV ══════════════════════════════════════════════ -->
+<nav id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="mobile-nav-logo"><img src="assets/online-pro-max-logo.svg" alt="Online Pro Max" /></a>
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu" onclick="window.closeMobileNav()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="mobile-nav-body">
+    <div class="mobile-nav-item"><a href="index.html" class="mobile-nav-link no-dropdown">Home</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Services <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="services.html"><i class="fa-solid fa-grid-2 fa-fw"></i> All Services</a>
+        <a href="services.html#digital-marketing"><i class="fa-solid fa-chart-line fa-fw"></i> Digital Marketing</a>
+        <a href="services.html#web-dev"><i class="fa-solid fa-laptop-code fa-fw"></i> Web Development</a>
+        <a href="services.html#content"><i class="fa-solid fa-clapperboard fa-fw"></i> Content Creation</a>
+        <a href="services.html#design"><i class="fa-solid fa-pen-ruler fa-fw"></i> Graphic Design</a>
+        <a href="mediapr.html"><i class="fa-solid fa-newspaper fa-fw"></i> Media &amp; PR</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="portfolio.html" class="mobile-nav-link no-dropdown">Portfolio</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Company <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="about.html"><i class="fa-solid fa-building fa-fw"></i> About Us</a>
+        <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw"></i> Join Our Team</a>
+        <a href="partners.html"><i class="fa-solid fa-handshake fa-fw"></i> Partners</a>
+        <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw"></i> Join Our Network</a>
+        <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw"></i> FAQ</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link no-dropdown">Blog</a></div>
+  </div>
+  <div class="mobile-nav-footer">
+    <a href="contact.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+  </div>
+</nav>
+
+<!-- ══ TOP BAR ════════════════════════════════════════════════ -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <a href="mailto:contact@onlinepromax.com"><i class="fa-solid fa-envelope"></i> contact@onlinepromax.com</a>
+      <a href="tel:+971552594585"><i class="fa-solid fa-phone"></i> +971 55 259 4585</a>
+      <span><i class="fa-solid fa-location-dot"></i> Meydan Grandstand, 6th Floor, Dubai, UAE</span>
+    </div>
+    <div class="top-bar-right">
+      <a href="https://www.facebook.com/onlinepromax" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/onlinepromax" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://x.com/onlinepromax" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/onlinepromax/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/@onlinepromax" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+<!-- ══ NAVBAR ═════════════════════════════════════════════════ -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/online-pro-max-logo.svg" alt="Online Pro Max" /></a>
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <div class="nav-item">
+        <span class="nav-link">Services <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="services.html"><i class="fa-solid fa-grid-2 fa-fw" style="color:var(--blue);opacity:.7;"></i> All Services</a>
+          <a href="services.html#digital-marketing"><i class="fa-solid fa-chart-line fa-fw" style="color:var(--blue);opacity:.7;"></i> Digital Marketing</a>
+          <a href="services.html#web-dev"><i class="fa-solid fa-laptop-code fa-fw" style="color:var(--blue);opacity:.7;"></i> Web Development</a>
+          <a href="services.html#content"><i class="fa-solid fa-clapperboard fa-fw" style="color:var(--blue);opacity:.7;"></i> Content Creation</a>
+          <a href="services.html#design"><i class="fa-solid fa-pen-ruler fa-fw" style="color:var(--blue);opacity:.7;"></i> Graphic Design</a>
+          <a href="mediapr.html" style="color:var(--blue);font-weight:600;"><i class="fa-solid fa-newspaper fa-fw" style="color:var(--blue);opacity:.7;"></i> Media &amp; PR</a>
+        </div>
+      </div>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <div class="nav-item">
+        <span class="nav-link">Company <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="about.html"><i class="fa-solid fa-building fa-fw" style="color:var(--blue);opacity:.7;"></i> About Us</a>
+          <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Team</a>
+          <a href="partners.html"><i class="fa-solid fa-handshake fa-fw" style="color:var(--blue);opacity:.7;"></i> Partners</a>
+          <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Network</a>
+          <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw" style="color:var(--blue);opacity:.7;"></i> FAQ</a>
+        </div>
+      </div>
+      <a href="blog.html" class="nav-link active">Blog</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" onclick="window.openMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- POST HERO -->
+<section class="bp-hero">
+  <div class="bp-hero-glow"></div>
+  <div class="bp-hero-grid"></div>
+  <div class="bp-hero-inner">
+    <div class="bp-hero-cats">
+      <span class="bp-hero-cat bp-hero-cat--wd">Software Development</span><span class="bp-hero-cat bp-hero-cat--cnt">Digital Transformation</span><span class="bp-hero-cat bp-hero-cat--wd">Enterprise Software</span>
+    </div>
+    <h1 class="bp-hero-title">Low-Code/No-Code Platforms: Accelerating Digital Transformation for SMEs and Enterprises</h1>
+    <div class="bp-hero-meta">
+      <div class="bp-hero-meta-item"><i class="fa-solid fa-user"></i> Online Pro Max Team</div>
+      <div class="bp-hero-meta-item"><i class="fa-solid fa-calendar"></i> February 11, 2026</div>
+      <div class="bp-hero-meta-item"><i class="fa-solid fa-clock"></i> 9 min read</div>
+      <div class="bp-hero-meta-item"><i class="fa-solid fa-chart-line"></i> Software Solutions</div>
+    </div>
+  </div>
+</section>
+
+<!-- HERO IMAGE -->
+<img
+  src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=1200&auto=format&fit=crop&q=80"
+  alt="Low-Code/No-Code Platforms: Accelerating Digital Transformation for SMEs and Enterprises"
+  class="bp-hero-img"
+/>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb"><div class="container">
+  <a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i>
+  <a href="blog.html">Blog</a><i class="fa-solid fa-chevron-right"></i>
+  <span>Low-Code/No-Code Guide</span>
+</div></div>
+
+<!-- POST LAYOUT -->
+<div class="bp-layout">
+
+  <!-- ══ ARTICLE ══ -->
+  <main>
+    <article class="bp-article">
+
+      <p>Not every business problem needs a custom-built application from scratch. An internal approval workflow, a customer portal, or an inventory tracker can often be built in days rather than months using low-code or no-code platforms — freeing your engineering team to focus on the systems that are genuinely core to your competitive advantage.</p>
+      <p>The challenge is knowing which projects belong on which path. Choose wrong, and you either waste months custom-building something a template could have solved, or you hit a wall six months into a no-code build when it can't handle the complexity your business actually needs.</p>
+
+      <div class="bp-callout">
+        <i class="fa-solid fa-lightbulb"></i>
+        <p><strong>Online Pro Max helps businesses choose and implement the right build approach.</strong> Not sure whether your next project needs low-code or custom development? <a href="request-quote.html">Get a free platform assessment</a>.</p>
+      </div>
+
+      <h2 id="s1">1. What Low-Code and No-Code Actually Solve</h2>
+      <p>Both approaches reduce the amount of hand-written code needed to build working software, using visual builders, pre-built components, and drag-and-drop logic. The core promise is speed: what once took a development team weeks can often be assembled by a smaller team — or a single skilled operator — in days.</p>
+
+      <div class="bp-stats-row">
+        <div class="bp-stat-box">
+          <div class="bp-stat-num">70%</div>
+          <div class="bp-stat-label">of new business applications projected to use low-code/no-code tools by 2026</div>
+        </div>
+        <div class="bp-stat-box">
+          <div class="bp-stat-num">5–10×</div>
+          <div class="bp-stat-label">faster build time for suitable internal tools vs. custom development</div>
+        </div>
+        <div class="bp-stat-box">
+          <div class="bp-stat-num">60%</div>
+          <div class="bp-stat-label">lower initial cost for standard workflow and portal builds</div>
+        </div>
+      </div>
+
+      <h2 id="s2">2. Low-Code vs. No-Code vs. Custom Development</h2>
+      <table class="bp-table">
+        <thead><tr><th>Approach</th><th>Who Builds It</th><th>Flexibility</th><th>Best For</th></tr></thead>
+        <tbody>
+          <tr><td>No-code</td><td>Business users, no coding</td><td class="loser">Limited to platform features</td><td>Simple internal tools, forms, basic portals</td></tr>
+          <tr><td>Low-code</td><td>Mixed technical/business teams</td><td>Moderate — code extensions possible</td><td>Workflow apps, internal dashboards, MVPs</td></tr>
+          <tr><td>Custom development</td><td>Software engineers</td><td class="winner">Fully flexible</td><td>Core product, complex integrations, scale</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="s3">3. Where These Platforms Excel</h2>
+      <ul>
+        <li><strong>Internal operations tools:</strong> approval workflows, inventory trackers, HR request systems</li>
+        <li><strong>MVPs and proof-of-concepts:</strong> validate an idea with real users before committing to custom development</li>
+        <li><strong>Customer/partner portals:</strong> standard dashboards, document sharing, and status tracking</li>
+        <li><strong>Data collection and reporting:</strong> forms, surveys, and dashboards pulling from existing data sources</li>
+      </ul>
+
+      <h2 id="s4">4. Where They Hit a Wall</h2>
+      <div class="bp-callout warning">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <p><strong>Common failure points:</strong> high-volume, performance-critical systems; deep custom integrations with legacy or proprietary systems; anything requiring unique UX that differentiates your product; and situations where you outgrow the platform's pricing model as usage scales.</p>
+      </div>
+      <p>We've seen businesses build an entire core product on a no-code platform, only to face a costly rebuild eighteen months later when the platform simply couldn't support the scale or customisation the business had grown into. If it's core to your competitive advantage, build it to last.</p>
+
+      <h2 id="s5">5. The Hybrid Approach We Recommend</h2>
+      <p>The most resilient setup we build for clients treats low-code/no-code and custom development as complementary, not competing:</p>
+      <ul>
+        <li>Use no-code/low-code for internal tools, admin panels, and anything non-customer-facing that changes frequently</li>
+        <li>Reserve custom development for your core product, customer-facing experience, and anything that's a genuine competitive differentiator</li>
+        <li>Connect both through well-designed APIs so data flows cleanly between systems instead of living in silos</li>
+        <li>Re-evaluate annually — a tool that made sense at your current scale may need replacing as you grow</li>
+      </ul>
+
+      <h2 id="s6">6. Governance for Citizen Developers</h2>
+      <p>As more non-technical staff build their own tools ("citizen development"), governance becomes essential to avoid a sprawl of unmaintained, insecure internal apps. Establish a lightweight review process for any tool touching customer data, a central inventory of what's been built and by whom, and clear ownership for ongoing maintenance — otherwise today's productivity win becomes next year's security and support headache.</p>
+
+
+    </article>
+
+    <!-- Share bar -->
+    <div class="bp-share">
+      <span class="bp-share-label">Share this article</span>
+      <button class="bp-share-btn fb" data-share="fb" title="Share on Facebook"><i class="fa-brands fa-facebook-f"></i></button>
+      <button class="bp-share-btn tw" data-share="tw" title="Share on X"><i class="fa-brands fa-x-twitter"></i></button>
+      <button class="bp-share-btn li" data-share="li" title="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></button>
+      <button class="bp-share-btn wa" data-share="wa" title="Share on WhatsApp"><i class="fa-brands fa-whatsapp"></i></button>
+    </div>
+
+    <!-- Author -->
+    <div class="bp-author">
+      <div class="bp-author-avatar">OPM</div>
+      <div>
+        <div class="bp-author-name">Online Pro Max Team</div>
+        <div class="bp-author-role">Software Solutions & Digital Transformation · Online Pro Max</div>
+        <p class="bp-author-bio">The Online Pro Max software team helps SMEs and enterprises across the UAE and international markets choose and implement the right mix of low-code, no-code, and custom-built software for their operations.</p>
+      </div>
+    </div>
+
+    <a href="blog.html" class="btn btn-outline" style="margin-bottom:2rem;"><i class="fa-solid fa-arrow-left"></i> Back to All Articles</a>
+  </main>
+
+  <!-- ══ SIDEBAR ══ -->
+  <aside class="bp-sidebar">
+
+    <!-- TOC -->
+    <div class="bp-sidebar-card">
+      <h3 class="bp-sidebar-title"><i class="fa-solid fa-list"></i> In This Article</h3>
+      <nav class="bp-toc-list">
+        <a class="bp-toc-link" href="#s1">1. What Low-Code and No-Code Actually Solve</a>
+        <a class="bp-toc-link" href="#s2">2. Low-Code vs. No-Code vs. Custom Development</a>
+        <a class="bp-toc-link" href="#s3">3. Where These Platforms Excel</a>
+        <a class="bp-toc-link" href="#s4">4. Where They Hit a Wall</a>
+        <a class="bp-toc-link" href="#s5">5. The Hybrid Approach We Recommend</a>
+        <a class="bp-toc-link" href="#s6">6. Governance for Citizen Developers</a>
+      </nav>
+    </div>
+
+    <!-- CTA -->
+    <div class="bp-sidebar-cta">
+      <h4>Exploring Low-Code for Your Business?</h4>
+      <p>We help businesses choose the right build approach — low-code, no-code, or custom development — and deliver it end-to-end.</p>
+      <a href="request-quote.html" class="btn"><i class="fa-solid fa-paper-plane"></i> Get a Free Platform Assessment</a>
+    </div>
+
+    <!-- Related posts -->
+    <div class="bp-sidebar-card">
+      <h3 class="bp-sidebar-title"><i class="fa-solid fa-newspaper"></i> Related Articles</h3>
+      <div>
+        <a href="blog.html" class="bp-related-item" style="display:flex;">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=120&auto=format&fit=crop&q=80" alt="" class="bp-related-img" />
+          <div>
+            <div class="bp-related-title">Cloud-Native Software Architecture Explained</div>
+            <div class="bp-related-date">January 21, 2026</div>
+          </div>
+        </a>
+        <a href="blog.html" class="bp-related-item" style="display:flex;">
+          <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=120&auto=format&fit=crop&q=80" alt="" class="bp-related-img" />
+          <div>
+            <div class="bp-related-title">Zero-Party Data & Privacy-First Marketing</div>
+            <div class="bp-related-date">February 4, 2026</div>
+          </div>
+        </a>
+        <a href="blog.html" class="bp-related-item" style="display:flex;">
+          <img src="https://images.unsplash.com/photo-1677756119517-756a188d2d94?w=120&auto=format&fit=crop&q=80" alt="" class="bp-related-img" />
+          <div>
+            <div class="bp-related-title">AI-Powered Marketing Automation in 2026</div>
+            <div class="bp-related-date">January 14, 2026</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick contact -->
+    <div class="bp-sidebar-card">
+      <h3 class="bp-sidebar-title"><i class="fa-solid fa-headset"></i> Talk to Our Team</h3>
+      <p style="font-size:.84rem;color:var(--text-dim);line-height:1.65;margin-bottom:1rem;">Have questions about this topic for your business? Our team is happy to help — no commitment, no pressure.</p>
+      <a href="https://wa.me/971552594585?text=Hello%2C%20I%20read%20the%20Low-Code%2FNo-Code%20article%20and%20want%20to%20learn%20more." target="_blank" class="btn btn-blue" style="width:100%;justify-content:center;font-size:.84rem;"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us Now</a>
+    </div>
+
+  </aside>
+</div>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <a href="index.html"><img src="assets/online-pro-max-logo.svg" alt="Online Pro Max" style="filter:brightness(0) invert(1);" /></a>
+        </div>
+        <p class="footer-brand-desc">Online Pro Max is an international marketing and software solutions company — delivering digital marketing, custom software, content creation, and graphic design that drives real growth for brands worldwide.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/onlinepromax" class="footer-social" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/onlinepromax" class="footer-social" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/onlinepromax" class="footer-social" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/onlinepromax/" class="footer-social" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@onlinepromax" class="footer-social" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> About Us</a></li>
+          <li><a href="careers.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Join Our Team</a></li>
+          <li><a href="partners.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Partners</a></li>
+          <li><a href="portfolio.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Portfolio</a></li>
+          <li><a href="blog.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Blog</a></li>
+          <li><a href="faq.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#digital-marketing"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Digital Marketing</a></li>
+          <li><a href="services.html#web-dev"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Web &amp; App Development</a></li>
+          <li><a href="services.html#content"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Content Creation</a></li>
+          <li><a href="services.html#design"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Graphic Design</a></li>
+          <li><a href="request-quote.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Get a Free Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Get in Touch</h4>
+        <div class="footer-address">
+          <p style="margin-bottom:.7rem;"><i class="fa-solid fa-location-dot" style="color:var(--blue-light);margin-right:.5rem;"></i>Meydan Grandstand, 6th Floor,<br/>Meydan Rd, Nad Al Sheba, Dubai, UAE</p>
+          <p style="margin-bottom:.5rem;"><i class="fa-solid fa-phone" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="tel:+971552594585">+971 55 259 4585</a></p>
+          <p><i class="fa-solid fa-envelope" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="mailto:contact@onlinepromax.com">contact@onlinepromax.com</a></p>
+        </div>
+        <h4 class="footer-col-title" style="margin-top:1.5rem;">Newsletter</h4>
+        <p style="font-size:.79rem;color:rgba(210,226,255,.55);margin-bottom:.5rem;">Stay updated with Online Pro Max news.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email" required />
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Online Pro Max LLC. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="blog-post.js"></script>
+</body>
+</html>

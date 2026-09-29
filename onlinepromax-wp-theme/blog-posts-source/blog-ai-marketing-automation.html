@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="How AI-powered marketing automation, predictive scoring and agentic workflows are transforming customer acquisition in 2026 — a practical guide for growth teams." />
+  <title>AI-Powered Marketing Automation in 2026: How Predictive AI and Agentic Workflows Are Rewriting the Growth Playbook — Online Pro Max Blog</title>
+  <link rel="stylesheet" href="blog-post.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+<div id="scroll-progress"></div>
+<a id="whatsapp-btn" href="https://wa.me/971552594585" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<!-- ══ MOBILE NAV ══════════════════════════════════════════════ -->
+<nav id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="mobile-nav-logo"><img src="assets/online-pro-max-logo.svg" alt="Online Pro Max" /></a>
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu" onclick="window.closeMobileNav()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="mobile-nav-body">
+    <div class="mobile-nav-item"><a href="index.html" class="mobile-nav-link no-dropdown">Home</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Services <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="services.html"><i class="fa-solid fa-grid-2 fa-fw"></i> All Services</a>
+        <a href="services.html#digital-marketing"><i class="fa-solid fa-chart-line fa-fw"></i> Digital Marketing</a>
+        <a href="services.html#web-dev"><i class="fa-solid fa-laptop-code fa-fw"></i> Web Development</a>
+        <a href="services.html#content"><i class="fa-solid fa-clapperboard fa-fw"></i> Content Creation</a>
+        <a href="services.html#design"><i class="fa-solid fa-pen-ruler fa-fw"></i> Graphic Design</a>
+        <a href="mediapr.html"><i class="fa-solid fa-newspaper fa-fw"></i> Media &amp; PR</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="portfolio.html" class="mobile-nav-link no-dropdown">Portfolio</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Company <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="about.html"><i class="fa-solid fa-building fa-fw"></i> About Us</a>
+        <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw"></i> Join Our Team</a>
+        <a href="partners.html"><i class="fa-solid fa-handshake fa-fw"></i> Partners</a>
+        <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw"></i> Join Our Network</a>
+        <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw"></i> FAQ</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link no-dropdown">Blog</a></div>
+  </div>
+  <div class="mobile-nav-footer">
+    <a href="contact.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+  </div>
+</nav>
+
+<!-- ══ TOP BAR ════════════════════════════════════════════════ -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <a href="mailto:contact@onlinepromax.com"><i class="fa-solid fa-envelope"></i> contact@onlinepromax.com</a>
+      <a href="tel:+971552594585"><i class="fa-solid fa-phone"></i> +971 55 259 4585</a>
+      <span><i class="fa-solid fa-location-dot"></i> Meydan Grandstand, 6th Floor, Dubai, UAE</span>
+    </div>
+    <div class="top-bar-right">
+      <a href="https://www.facebook.com/onlinepromax" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/onlinepromax" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://x.com/onlinepromax" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/onlinepromax/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/@onlinepromax" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+<!-- ══ NAVBAR ═════════════════════════════════════════════════ -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/online-pro-max-logo.svg" alt="Online Pro Max" /></a>
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <div class="nav-item">
+        <span class="nav-link">Services <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="services.html"><i class="fa-solid fa-grid-2 fa-fw" style="color:var(--blue);opacity:.7;"></i> All Services</a>
+          <a href="services.html#digital-marketing"><i class="fa-solid fa-chart-line fa-fw" style="color:var(--blue);opacity:.7;"></i> Digital Marketing</a>
+          <a href="services.html#web-dev"><i class="fa-solid fa-laptop-code fa-fw" style="color:var(--blue);opacity:.7;"></i> Web Development</a>
+          <a href="services.html#content"><i class="fa-solid fa-clapperboard fa-fw" style="color:var(--blue);opacity:.7;"></i> Content Creation</a>
+          <a href="services.html#design"><i class="fa-solid fa-pen-ruler fa-fw" style="color:var(--blue);opacity:.7;"></i> Graphic Design</a>
+          <a href="mediapr.html" style="color:var(--blue);font-weight:600;"><i class="fa-solid fa-newspaper fa-fw" style="color:var(--blue);opacity:.7;"></i> Media &amp; PR</a>
+        </div>
+      </div>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <div class="nav-item">
+        <span class="nav-link">Company <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="about.html"><i class="fa-solid fa-building fa-fw" style="color:var(--blue);opacity:.7;"></i> About Us</a>
+          <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Team</a>
+          <a href="partners.html"><i class="fa-solid fa-handshake fa-fw" style="color:var(--blue);opacity:.7;"></i> Partners</a>
+          <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Network</a>
+          <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw" style="color:var(--blue);opacity:.7;"></i> FAQ</a>
+        </div>
+      </div>
+      <a href="blog.html" class="nav-link active">Blog</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" onclick="window.openMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- POST HERO -->
+<section class="bp-hero">
+  <div class="bp-hero-glow"></div>
+  <div class="bp-hero-grid"></div>
+  <div class="bp-hero-inner">
+    <div class="bp-hero-cats">
+      <span class="bp-hero-cat bp-hero-cat--mkt">Digital Marketing</span><span class="bp-hero-cat bp-hero-cat--mkt">Marketing Automation</span><span class="bp-hero-cat bp-hero-cat--cnt">AI & Software</span>
+    </div>
+    <h1 class="bp-hero-title">AI-Powered Marketing Automation in 2026: How Predictive AI and Agentic Workflows Are Rewriting the Growth Playbook</h1>
+    <div class="bp-hero-meta">
+      <div class="bp-hero-meta-item"><i class="fa-solid fa-user"></i> Online Pro Max Team</div>
+      <div class="bp-hero-meta-item"><i class="fa-solid fa-calendar"></i> January 14, 2026</div>
+      <div class="bp-hero-meta-item"><i class="fa-solid fa-clock"></i> 11 min read</div>
+      <div class="bp-hero-meta-item"><i class="fa-solid fa-chart-line"></i> AI & Marketing</div>
+    </div>
+  </div>
+</section>
+
+<!-- HERO IMAGE -->
+<img
+  src="https://images.unsplash.com/photo-1677756119517-756a188d2d94?w=1200&auto=format&fit=crop&q=80"
+  alt="AI-Powered Marketing Automation in 2026: How Predictive AI and Agentic Workflows Are Rewriting the Growth Playbook"
+  class="bp-hero-img"
+/>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb"><div class="container">
+  <a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i>
+  <a href="blog.html">Blog</a><i class="fa-solid fa-chevron-right"></i>
+  <span>AI Marketing Automation 2026</span>
+</div></div>
+
+<!-- POST LAYOUT -->
+<div class="bp-layout">
+
+  <!-- ══ ARTICLE ══ -->
+  <main>
+    <article class="bp-article">
+
+      <p>Marketing automation used to mean drip email sequences and if-this-then-that workflows. In 2026, it means something far more powerful: <strong>autonomous AI agents</strong> that research prospects, personalise outreach, adjust ad spend in real time, and hand off sales-ready leads — with minimal human input beyond setting the strategy and guardrails.</p>
+
+      <p>For international brands managing marketing across multiple regions and languages, this shift isn't optional — it's the difference between a lean team that scales and a team drowning in manual campaign management. In this guide, we break down what's actually changed, how the new automation stack is structured, and how to adopt agentic AI responsibly.</p>
+
+      <div class="bp-callout">
+        <i class="fa-solid fa-lightbulb"></i>
+        <p><strong>Online Pro Max builds AI-powered marketing automation stacks for growing businesses.</strong> If you want a free assessment of where automation could save your team the most time, <a href="request-quote.html">request a consultation here</a>.</p>
+      </div>
+
+      <h2 id="s1">1. From Automation to Agentic AI</h2>
+      <p>Traditional marketing automation platforms (think classic email/CRM sequencing) follow rigid, pre-defined rules: "if a lead downloads an ebook, send email B three days later." This works, but it's static — it can't adapt to context, sentiment, or new information without a human rebuilding the workflow.</p>
+      <p><strong>Agentic AI marketing</strong> flips this model. Instead of following a fixed script, an AI agent is given a goal ("qualify and nurture inbound leads for our software division"), access to tools (CRM, email, ad platforms, analytics), and a set of guardrails. The agent then plans its own sequence of actions, adapts based on how a prospect responds, and escalates to a human at the right moment.</p>
+
+      <div class="bp-stats-row">
+        <div class="bp-stat-box">
+          <div class="bp-stat-num">63%</div>
+          <div class="bp-stat-label">of marketing leaders piloting AI agents for campaign execution in 2025–26</div>
+        </div>
+        <div class="bp-stat-box">
+          <div class="bp-stat-num">3.4×</div>
+          <div class="bp-stat-label">faster lead response time reported by early adopters of agentic workflows</div>
+        </div>
+        <div class="bp-stat-box">
+          <div class="bp-stat-num">28%</div>
+          <div class="bp-stat-label">average reduction in cost-per-qualified-lead after automation maturity</div>
+        </div>
+      </div>
+
+      <h2 id="s2">2. The New Marketing Automation Stack</h2>
+      <p>A modern, AI-driven automation stack is typically organised in four layers:</p>
+      <ul>
+        <li><strong>Data layer:</strong> a unified customer data platform (CDP) that merges website, CRM, ad platform and product-usage data into a single profile.</li>
+        <li><strong>Intelligence layer:</strong> predictive models for lead scoring, churn risk, and next-best-action, plus large language models for content generation and personalisation.</li>
+        <li><strong>Orchestration layer:</strong> the automation/agent platform that sequences actions across email, ads, chat and sales handoff.</li>
+        <li><strong>Channel layer:</strong> the actual touchpoints — paid media APIs, email/SMS/WhatsApp, on-site personalisation, and sales tools.</li>
+      </ul>
+      <p>The mistake most companies make is buying channel-layer tools first (another email tool, another ad platform) without building the data and intelligence layers underneath. Automation is only as smart as the data feeding it.</p>
+
+      <h2 id="s3">3. Predictive Lead Scoring in Practice</h2>
+      <p>Instead of scoring leads on simple demographic rules, predictive models trained on historical conversion data can weigh dozens of behavioural signals — page depth, time-on-site, pricing page visits, ad engagement, firmographic fit — to output a probability of conversion. This lets sales teams focus on the 15–20% of leads that actually matter, instead of working every inbound form fill in order of arrival.</p>
+
+      <table class="bp-table">
+        <thead><tr><th>Scoring Approach</th><th>Accuracy</th><th>Maintenance</th><th>Best For</th></tr></thead>
+        <tbody>
+          <tr><td>Rule-based scoring</td><td class="loser">Low</td><td class="winner">Low</td><td>Small lead volumes, simple funnels</td></tr>
+          <tr><td>Predictive ML scoring</td><td class="winner">High</td><td>Medium</td><td>Mid-to-high volume B2B/SaaS</td></tr>
+          <tr><td>LLM-assisted qualification</td><td class="winner">High + contextual</td><td>Medium</td><td>Complex, consultative sales</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="s4">4. Agentic Workflows: Real Examples</h2>
+      <h3>Example 1 — Ad Budget Reallocation Agent</h3>
+      <p>An agent monitors cost-per-lead across Meta, Google and LinkedIn every few hours, and shifts budget toward the best-performing channel and audience segment within pre-set limits — something a human media buyer would typically check once a day at best.</p>
+      <h3>Example 2 — Lead Research &amp; Personalisation Agent</h3>
+      <p>When a new lead fills a form, an agent enriches their profile, drafts a personalised first-touch email referencing their company and likely use case, and queues it for a one-click human approval before sending.</p>
+      <h3>Example 3 — Content Repurposing Agent</h3>
+      <p>A single long-form article or webinar is automatically broken into social posts, email snippets, and ad copy variants in your brand voice, ready for review rather than being written from scratch each time.</p>
+
+      <div class="bp-callout warning">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <p><strong>The biggest risk:</strong> letting an agent operate fully unsupervised on customer-facing actions. The winning pattern in 2026 is "agent drafts, human approves" for anything customer-facing, with full autonomy reserved for internal, reversible actions like budget shifts and reporting.</p>
+      </div>
+
+      <h2 id="s5">5. Governance, Risk &amp; Human Oversight</h2>
+      <p>As automation gets more autonomous, governance becomes a strategy question, not just an IT one. Before deploying agents in production, define:</p>
+      <ul>
+        <li>Which actions an agent can take autonomously vs. which require human approval</li>
+        <li>Spend and frequency limits (budget caps, message caps per contact)</li>
+        <li>Data privacy boundaries — what customer data agents can access and for how long</li>
+        <li>A clear audit trail of every automated action for compliance and quality review</li>
+      </ul>
+
+      <h2 id="s6">6. Getting Started: A Practical Roadmap</h2>
+      <p>You don't need to overhaul your entire stack overnight. We recommend a phased approach:</p>
+      <h3>Phase 1 — Foundation (Weeks 1–4)</h3>
+      <p>Audit your current data sources, consolidate them, and fix tracking gaps. Automation built on broken data will amplify the mess, not fix it.</p>
+      <h3>Phase 2 — Predictive Layer (Weeks 4–8)</h3>
+      <p>Deploy lead scoring and basic personalisation. Measure the lift against your current manual process before scaling further.</p>
+      <h3>Phase 3 — Agentic Pilots (Weeks 8–16)</h3>
+      <p>Introduce one or two narrow, high-value agent workflows (e.g. budget reallocation or lead enrichment) with strict guardrails, then expand once trust and results are proven.</p>
+
+
+    </article>
+
+    <!-- Share bar -->
+    <div class="bp-share">
+      <span class="bp-share-label">Share this article</span>
+      <button class="bp-share-btn fb" data-share="fb" title="Share on Facebook"><i class="fa-brands fa-facebook-f"></i></button>
+      <button class="bp-share-btn tw" data-share="tw" title="Share on X"><i class="fa-brands fa-x-twitter"></i></button>
+      <button class="bp-share-btn li" data-share="li" title="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></button>
+      <button class="bp-share-btn wa" data-share="wa" title="Share on WhatsApp"><i class="fa-brands fa-whatsapp"></i></button>
+    </div>
+
+    <!-- Author -->
+    <div class="bp-author">
+      <div class="bp-author-avatar">OPM</div>
+      <div>
+        <div class="bp-author-name">Online Pro Max Team</div>
+        <div class="bp-author-role">Marketing Automation & AI Strategy · Online Pro Max</div>
+        <p class="bp-author-bio">The Online Pro Max marketing technology team designs automation stacks, predictive scoring models, and AI agent workflows for clients across the UAE, GCC and international markets — combining martech engineering with hands-on campaign experience.</p>
+      </div>
+    </div>
+
+    <a href="blog.html" class="btn btn-outline" style="margin-bottom:2rem;"><i class="fa-solid fa-arrow-left"></i> Back to All Articles</a>
+  </main>
+
+  <!-- ══ SIDEBAR ══ -->
+  <aside class="bp-sidebar">
+
+    <!-- TOC -->
+    <div class="bp-sidebar-card">
+      <h3 class="bp-sidebar-title"><i class="fa-solid fa-list"></i> In This Article</h3>
+      <nav class="bp-toc-list">
+        <a class="bp-toc-link" href="#s1">1. From Automation to Agentic AI</a>
+        <a class="bp-toc-link" href="#s2">2. The New Marketing Automation Stack</a>
+        <a class="bp-toc-link" href="#s3">3. Predictive Lead Scoring in Practice</a>
+        <a class="bp-toc-link" href="#s4">4. Agentic Workflows: Real Examples</a>
+        <a class="bp-toc-link" href="#s5">5. Governance, Risk &amp; Human Oversight</a>
+        <a class="bp-toc-link" href="#s6">6. Getting Started: A Practical Roadmap</a>
+      </nav>
+    </div>
+
+    <!-- CTA -->
+    <div class="bp-sidebar-cta">
+      <h4>Ready to Automate Your Growth?</h4>
+      <p>We design and build AI-powered marketing automation stacks — from lead scoring to agentic campaign workflows — tailored to your business.</p>
+      <a href="request-quote.html" class="btn"><i class="fa-solid fa-paper-plane"></i> Get a Free AI Audit</a>
+    </div>
+
+    <!-- Related posts -->
+    <div class="bp-sidebar-card">
+      <h3 class="bp-sidebar-title"><i class="fa-solid fa-newspaper"></i> Related Articles</h3>
+      <div>
+        <a href="blog.html" class="bp-related-item" style="display:flex;">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=120&auto=format&fit=crop&q=80" alt="" class="bp-related-img" />
+          <div>
+            <div class="bp-related-title">Cloud-Native Software Architecture Explained</div>
+            <div class="bp-related-date">January 21, 2026</div>
+          </div>
+        </a>
+        <a href="blog.html" class="bp-related-item" style="display:flex;">
+          <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=120&auto=format&fit=crop&q=80" alt="" class="bp-related-img" />
+          <div>
+            <div class="bp-related-title">Generative AI in Content Creation</div>
+            <div class="bp-related-date">January 28, 2026</div>
+          </div>
+        </a>
+        <a href="blog.html" class="bp-related-item" style="display:flex;">
+          <img src="https://images.unsplash.com/photo-1665799871677-f1fd17338b43?w=120&auto=format&fit=crop&q=80" alt="" class="bp-related-img" />
+          <div>
+            <div class="bp-related-title">Meta Ads vs Google Ads: Full Comparison</div>
+            <div class="bp-related-date">May 18, 2025</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick contact -->
+    <div class="bp-sidebar-card">
+      <h3 class="bp-sidebar-title"><i class="fa-solid fa-headset"></i> Talk to Our Team</h3>
+      <p style="font-size:.84rem;color:var(--text-dim);line-height:1.65;margin-bottom:1rem;">Have questions about this topic for your business? Our team is happy to help — no commitment, no pressure.</p>
+      <a href="https://wa.me/971552594585?text=Hello%2C%20I%20read%20the%20AI%20Marketing%20Automation%20article%20and%20want%20to%20learn%20more." target="_blank" class="btn btn-blue" style="width:100%;justify-content:center;font-size:.84rem;"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us Now</a>
+    </div>
+
+  </aside>
+</div>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <a href="index.html"><img src="assets/online-pro-max-logo.svg" alt="Online Pro Max" style="filter:brightness(0) invert(1);" /></a>
+        </div>
+        <p class="footer-brand-desc">Online Pro Max is an international marketing and software solutions company — delivering digital marketing, custom software, content creation, and graphic design that drives real growth for brands worldwide.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/onlinepromax" class="footer-social" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/onlinepromax" class="footer-social" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/onlinepromax" class="footer-social" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/onlinepromax/" class="footer-social" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@onlinepromax" class="footer-social" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> About Us</a></li>
+          <li><a href="careers.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Join Our Team</a></li>
+          <li><a href="partners.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Partners</a></li>
+          <li><a href="portfolio.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Portfolio</a></li>
+          <li><a href="blog.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Blog</a></li>
+          <li><a href="faq.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#digital-marketing"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Digital Marketing</a></li>
+          <li><a href="services.html#web-dev"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Web &amp; App Development</a></li>
+          <li><a href="services.html#content"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Content Creation</a></li>
+          <li><a href="services.html#design"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Graphic Design</a></li>
+          <li><a href="request-quote.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Get a Free Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Get in Touch</h4>
+        <div class="footer-address">
+          <p style="margin-bottom:.7rem;"><i class="fa-solid fa-location-dot" style="color:var(--blue-light);margin-right:.5rem;"></i>Meydan Grandstand, 6th Floor,<br/>Meydan Rd, Nad Al Sheba, Dubai, UAE</p>
+          <p style="margin-bottom:.5rem;"><i class="fa-solid fa-phone" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="tel:+971552594585">+971 55 259 4585</a></p>
+          <p><i class="fa-solid fa-envelope" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="mailto:contact@onlinepromax.com">contact@onlinepromax.com</a></p>
+        </div>
+        <h4 class="footer-col-title" style="margin-top:1.5rem;">Newsletter</h4>
+        <p style="font-size:.79rem;color:rgba(210,226,255,.55);margin-bottom:.5rem;">Stay updated with Online Pro Max news.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email" required />
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Online Pro Max LLC. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="blog-post.js"></script>
+</body>
+</html>

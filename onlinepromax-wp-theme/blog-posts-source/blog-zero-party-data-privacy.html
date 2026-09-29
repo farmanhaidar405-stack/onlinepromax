@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A practical guide to zero-party data collection and privacy-first marketing strategy as third-party cookies disappear and data regulation tightens globally." />
+  <title>Zero-Party Data &amp; Privacy-First Marketing: Preparing Your Brand for a Cookieless, AI-Regulated Future — Online Pro Max Blog</title>
+  <link rel="stylesheet" href="blog-post.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+<div id="scroll-progress"></div>
+<a id="whatsapp-btn" href="https://wa.me/971552594585" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<!-- ══ MOBILE NAV ══════════════════════════════════════════════ -->
+<nav id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="mobile-nav-logo"><img src="assets/online-pro-max-logo.svg" alt="Online Pro Max" /></a>
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu" onclick="window.closeMobileNav()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="mobile-nav-body">
+    <div class="mobile-nav-item"><a href="index.html" class="mobile-nav-link no-dropdown">Home</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Services <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="services.html"><i class="fa-solid fa-grid-2 fa-fw"></i> All Services</a>
+        <a href="services.html#digital-marketing"><i class="fa-solid fa-chart-line fa-fw"></i> Digital Marketing</a>
+        <a href="services.html#web-dev"><i class="fa-solid fa-laptop-code fa-fw"></i> Web Development</a>
+        <a href="services.html#content"><i class="fa-solid fa-clapperboard fa-fw"></i> Content Creation</a>
+        <a href="services.html#design"><i class="fa-solid fa-pen-ruler fa-fw"></i> Graphic Design</a>
+        <a href="mediapr.html"><i class="fa-solid fa-newspaper fa-fw"></i> Media &amp; PR</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="portfolio.html" class="mobile-nav-link no-dropdown">Portfolio</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Company <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="about.html"><i class="fa-solid fa-building fa-fw"></i> About Us</a>
+        <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw"></i> Join Our Team</a>
+        <a href="partners.html"><i class="fa-solid fa-handshake fa-fw"></i> Partners</a>
+        <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw"></i> Join Our Network</a>
+        <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw"></i> FAQ</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link no-dropdown">Blog</a></div>
+  </div>
+  <div class="mobile-nav-footer">
+    <a href="contact.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+  </div>
+</nav>
+
+<!-- ══ TOP BAR ════════════════════════════════════════════════ -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <a href="mailto:contact@onlinepromax.com"><i class="fa-solid fa-envelope"></i> contact@onlinepromax.com</a>
+      <a href="tel:+971552594585"><i class="fa-solid fa-phone"></i> +971 55 259 4585</a>
+      <span><i class="fa-solid fa-location-dot"></i> Meydan Grandstand, 6th Floor, Dubai, UAE</span>
+    </div>
+    <div class="top-bar-right">
+      <a href="https://www.facebook.com/onlinepromax" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/onlinepromax" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://x.com/onlinepromax" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/onlinepromax/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/@onlinepromax" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+<!-- ══ NAVBAR ═════════════════════════════════════════════════ -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/online-pro-max-logo.svg" alt="Online Pro Max" /></a>
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <div class="nav-item">
+        <span class="nav-link">Services <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="services.html"><i class="fa-solid fa-grid-2 fa-fw" style="color:var(--blue);opacity:.7;"></i> All Services</a>
+          <a href="services.html#digital-marketing"><i class="fa-solid fa-chart-line fa-fw" style="color:var(--blue);opacity:.7;"></i> Digital Marketing</a>
+          <a href="services.html#web-dev"><i class="fa-solid fa-laptop-code fa-fw" style="color:var(--blue);opacity:.7;"></i> Web Development</a>
+          <a href="services.html#content"><i class="fa-solid fa-clapperboard fa-fw" style="color:var(--blue);opacity:.7;"></i> Content Creation</a>
+          <a href="services.html#design"><i class="fa-solid fa-pen-ruler fa-fw" style="color:var(--blue);opacity:.7;"></i> Graphic Design</a>
+          <a href="mediapr.html" style="color:var(--blue);font-weight:600;"><i class="fa-solid fa-newspaper fa-fw" style="color:var(--blue);opacity:.7;"></i> Media &amp; PR</a>
+        </div>
+      </div>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <div class="nav-item">
+        <span class="nav-link">Company <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="about.html"><i class="fa-solid fa-building fa-fw" style="color:var(--blue);opacity:.7;"></i> About Us</a>
+          <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Team</a>
+          <a href="partners.html"><i class="fa-solid fa-handshake fa-fw" style="color:var(--blue);opacity:.7;"></i> Partners</a>
+          <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Network</a>
+          <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw" style="color:var(--blue);opacity:.7;"></i> FAQ</a>
+        </div>
+      </div>
+      <a href="blog.html" class="nav-link active">Blog</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" onclick="window.openMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- POST HERO -->
+<section class="bp-hero">
+  <div class="bp-hero-glow"></div>
+  <div class="bp-hero-grid"></div>
+  <div class="bp-hero-inner">
+    <div class="bp-hero-cats">
+      <span class="bp-hero-cat bp-hero-cat--mkt">Digital Marketing</span><span class="bp-hero-cat bp-hero-cat--wd">Data & Privacy</span><span class="bp-hero-cat bp-hero-cat--cnt">Strategy</span>
+    </div>
+    <h1 class="bp-hero-title">Zero-Party Data &amp; Privacy-First Marketing: Preparing Your Brand for a Cookieless, AI-Regulated Future</h1>
+    <div class="bp-hero-meta">
+      <div class="bp-hero-meta-item"><i class="fa-solid fa-user"></i> Online Pro Max Team</div>
+      <div class="bp-hero-meta-item"><i class="fa-solid fa-calendar"></i> February 4, 2026</div>
+      <div class="bp-hero-meta-item"><i class="fa-solid fa-clock"></i> 10 min read</div>
+      <div class="bp-hero-meta-item"><i class="fa-solid fa-chart-line"></i> Digital Marketing</div>
+    </div>
+  </div>
+</section>
+
+<!-- HERO IMAGE -->
+<img
+  src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=1200&auto=format&fit=crop&q=80"
+  alt="Zero-Party Data &amp; Privacy-First Marketing: Preparing Your Brand for a Cookieless, AI-Regulated Future"
+  class="bp-hero-img"
+/>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb"><div class="container">
+  <a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i>
+  <a href="blog.html">Blog</a><i class="fa-solid fa-chevron-right"></i>
+  <span>Zero-Party Data & Privacy Marketing</span>
+</div></div>
+
+<!-- POST LAYOUT -->
+<div class="bp-layout">
+
+  <!-- ══ ARTICLE ══ -->
+  <main>
+    <article class="bp-article">
+
+      <p>For twenty years, digital marketing was built on a simple foundation: third-party cookies that could track a user across the entire internet, feeding retargeting, attribution, and lookalike audiences. That foundation is gone. Major browsers have phased out third-party cookies, mobile platforms restrict cross-app tracking by default, and data protection regulation now spans most major economies. The brands adapting fastest are the ones building marketing systems around data customers <em>willingly</em> hand over — not data quietly collected behind the scenes.</p>
+
+      <div class="bp-callout">
+        <i class="fa-solid fa-lightbulb"></i>
+        <p><strong>Online Pro Max helps brands design privacy-first data and marketing strategies.</strong> Want a review of your current tracking and consent setup? <a href="request-quote.html">Request a free data strategy call</a>.</p>
+      </div>
+
+      <h2 id="s1">1. Why Third-Party Data Is Disappearing</h2>
+      <p>Three forces converged to end the third-party cookie era: browser vendors restricting cross-site tracking by default, mobile operating systems requiring explicit tracking consent, and a wave of privacy regulation (GDPR, CCPA, PDPL and similar frameworks across the GCC and beyond) that makes non-consensual tracking a legal liability, not just a UX annoyance.</p>
+
+      <div class="bp-stats-row">
+        <div class="bp-stat-box">
+          <div class="bp-stat-num">130+</div>
+          <div class="bp-stat-label">countries now have some form of data protection legislation in force</div>
+        </div>
+        <div class="bp-stat-box">
+          <div class="bp-stat-num">~40%</div>
+          <div class="bp-stat-label">average opt-in rate for app tracking prompts industry-wide</div>
+        </div>
+        <div class="bp-stat-box">
+          <div class="bp-stat-num">2×</div>
+          <div class="bp-stat-label">typical conversion lift from personalisation based on zero-party data</div>
+        </div>
+      </div>
+
+      <h2 id="s2">2. Zero-Party vs. First-Party vs. Third-Party Data</h2>
+      <table class="bp-table">
+        <thead><tr><th>Data Type</th><th>Source</th><th>Reliability</th><th>Availability</th></tr></thead>
+        <tbody>
+          <tr><td>Zero-party</td><td>Customer directly tells you (preferences, surveys, quizzes)</td><td class="winner">Highest — stated intent</td><td class="winner">Fully compliant</td></tr>
+          <tr><td>First-party</td><td>Your own site/app behaviour, purchase history, CRM</td><td class="winner">High — observed behaviour</td><td class="winner">Compliant with consent</td></tr>
+          <tr><td>Third-party</td><td>Purchased/aggregated from external sources</td><td class="loser">Declining accuracy</td><td class="loser">Rapidly restricted</td></tr>
+        </tbody>
+      </table>
+      <p>Zero-party data — information a customer proactively shares, like stated preferences, purchase intent, or product interests — is the most valuable and most durable asset in a privacy-first world, because it doesn't depend on tracking technology that keeps getting restricted.</p>
+
+      <h2 id="s3">3. Practical Zero-Party Data Collection Tactics</h2>
+      <ul>
+        <li><strong>Preference centers:</strong> let customers tell you what content, frequency, and channels they want — and actually honour it</li>
+        <li><strong>Interactive quizzes and product finders:</strong> collect intent data while delivering genuine value in the moment</li>
+        <li><strong>Progressive profiling:</strong> ask for one or two pieces of information at a time across multiple touchpoints, instead of a long form upfront</li>
+        <li><strong>Loyalty and account programs:</strong> exchange clear value (discounts, early access) for data customers are happy to share</li>
+        <li><strong>Post-purchase surveys:</strong> capture context on why someone bought — high-value data most brands never ask for</li>
+      </ul>
+
+      <h2 id="s4">4. Rebuilding Attribution Without Cookies</h2>
+      <p>Cross-platform attribution is genuinely harder without third-party cookies. The practical replacements gaining traction are:</p>
+      <ul>
+        <li><strong>Server-side / conversions API tracking:</strong> sending conversion events directly from your server to ad platforms, reducing reliance on browser-based pixels</li>
+        <li><strong>Media Mix Modelling (MMM):</strong> statistical modelling of overall channel contribution, less precise per-user but resilient to tracking loss</li>
+        <li><strong>Incrementality testing:</strong> geo-holdout and lift studies that measure true incremental impact of a channel rather than relying on last-click attribution</li>
+      </ul>
+
+      <h2 id="s5">5. Global Regulation Snapshot</h2>
+      <div class="bp-callout warning">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <p><strong>Compliance is not optional or one-size-fits-all.</strong> UAE and GCC businesses operating internationally may need to comply with several overlapping frameworks (UAE PDPL, GDPR for EU customers, CCPA for California customers) simultaneously. Consent management and data mapping should be reviewed with qualified legal counsel alongside your marketing strategy.</p>
+      </div>
+
+      <h2 id="s6">6. A 90-Day Privacy-First Action Plan</h2>
+      <h3>Days 1–30: Audit</h3>
+      <p>Map every tool collecting customer data, document what's collected, and identify consent gaps.</p>
+      <h3>Days 30–60: Build</h3>
+      <p>Implement a preference center and server-side tracking; launch one zero-party data collection touchpoint (quiz, survey, or preference form).</p>
+      <h3>Days 60–90: Optimise</h3>
+      <p>Use newly collected zero-party data to personalise at least one major campaign, and measure the lift against your previous approach.</p>
+
+
+    </article>
+
+    <!-- Share bar -->
+    <div class="bp-share">
+      <span class="bp-share-label">Share this article</span>
+      <button class="bp-share-btn fb" data-share="fb" title="Share on Facebook"><i class="fa-brands fa-facebook-f"></i></button>
+      <button class="bp-share-btn tw" data-share="tw" title="Share on X"><i class="fa-brands fa-x-twitter"></i></button>
+      <button class="bp-share-btn li" data-share="li" title="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></button>
+      <button class="bp-share-btn wa" data-share="wa" title="Share on WhatsApp"><i class="fa-brands fa-whatsapp"></i></button>
+    </div>
+
+    <!-- Author -->
+    <div class="bp-author">
+      <div class="bp-author-avatar">OPM</div>
+      <div>
+        <div class="bp-author-name">Online Pro Max Team</div>
+        <div class="bp-author-role">Data Strategy & Digital Marketing · Online Pro Max</div>
+        <p class="bp-author-bio">The Online Pro Max strategy team helps brands across the UAE, GCC and international markets navigate the shift to privacy-first marketing — from consent architecture to first- and zero-party data collection systems.</p>
+      </div>
+    </div>
+
+    <a href="blog.html" class="btn btn-outline" style="margin-bottom:2rem;"><i class="fa-solid fa-arrow-left"></i> Back to All Articles</a>
+  </main>
+
+  <!-- ══ SIDEBAR ══ -->
+  <aside class="bp-sidebar">
+
+    <!-- TOC -->
+    <div class="bp-sidebar-card">
+      <h3 class="bp-sidebar-title"><i class="fa-solid fa-list"></i> In This Article</h3>
+      <nav class="bp-toc-list">
+        <a class="bp-toc-link" href="#s1">1. Why Third-Party Data Is Disappearing</a>
+        <a class="bp-toc-link" href="#s2">2. Zero-Party vs. First-Party vs. Third-Party Data</a>
+        <a class="bp-toc-link" href="#s3">3. Practical Zero-Party Data Collection Tactics</a>
+        <a class="bp-toc-link" href="#s4">4. Rebuilding Attribution Without Cookies</a>
+        <a class="bp-toc-link" href="#s5">5. Global Regulation Snapshot</a>
+        <a class="bp-toc-link" href="#s6">6. A 90-Day Privacy-First Action Plan</a>
+      </nav>
+    </div>
+
+    <!-- CTA -->
+    <div class="bp-sidebar-cta">
+      <h4>Building a Privacy-First Data Strategy?</h4>
+      <p>We help brands design zero-party data collection systems and compliant marketing stacks that perform without third-party cookies.</p>
+      <a href="request-quote.html" class="btn"><i class="fa-solid fa-paper-plane"></i> Get a Free Data Strategy Call</a>
+    </div>
+
+    <!-- Related posts -->
+    <div class="bp-sidebar-card">
+      <h3 class="bp-sidebar-title"><i class="fa-solid fa-newspaper"></i> Related Articles</h3>
+      <div>
+        <a href="blog.html" class="bp-related-item" style="display:flex;">
+          <img src="https://images.unsplash.com/photo-1677756119517-756a188d2d94?w=120&auto=format&fit=crop&q=80" alt="" class="bp-related-img" />
+          <div>
+            <div class="bp-related-title">AI-Powered Marketing Automation in 2026</div>
+            <div class="bp-related-date">January 14, 2026</div>
+          </div>
+        </a>
+        <a href="blog.html" class="bp-related-item" style="display:flex;">
+          <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=120&auto=format&fit=crop&q=80" alt="" class="bp-related-img" />
+          <div>
+            <div class="bp-related-title">SEO 2025: The Complete Ranking Guide</div>
+            <div class="bp-related-date">April 15, 2025</div>
+          </div>
+        </a>
+        <a href="blog.html" class="bp-related-item" style="display:flex;">
+          <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=120&auto=format&fit=crop&q=80" alt="" class="bp-related-img" />
+          <div>
+            <div class="bp-related-title">Low-Code/No-Code Platforms for Enterprises</div>
+            <div class="bp-related-date">February 4, 2026</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick contact -->
+    <div class="bp-sidebar-card">
+      <h3 class="bp-sidebar-title"><i class="fa-solid fa-headset"></i> Talk to Our Team</h3>
+      <p style="font-size:.84rem;color:var(--text-dim);line-height:1.65;margin-bottom:1rem;">Have questions about this topic for your business? Our team is happy to help — no commitment, no pressure.</p>
+      <a href="https://wa.me/971552594585?text=Hello%2C%20I%20read%20the%20Zero-Party%20Data%20article%20and%20want%20to%20learn%20more." target="_blank" class="btn btn-blue" style="width:100%;justify-content:center;font-size:.84rem;"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us Now</a>
+    </div>
+
+  </aside>
+</div>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <a href="index.html"><img src="assets/online-pro-max-logo.svg" alt="Online Pro Max" style="filter:brightness(0) invert(1);" /></a>
+        </div>
+        <p class="footer-brand-desc">Online Pro Max is an international marketing and software solutions company — delivering digital marketing, custom software, content creation, and graphic design that drives real growth for brands worldwide.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/onlinepromax" class="footer-social" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/onlinepromax" class="footer-social" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/onlinepromax" class="footer-social" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/onlinepromax/" class="footer-social" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@onlinepromax" class="footer-social" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> About Us</a></li>
+          <li><a href="careers.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Join Our Team</a></li>
+          <li><a href="partners.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Partners</a></li>
+          <li><a href="portfolio.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Portfolio</a></li>
+          <li><a href="blog.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Blog</a></li>
+          <li><a href="faq.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#digital-marketing"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Digital Marketing</a></li>
+          <li><a href="services.html#web-dev"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Web &amp; App Development</a></li>
+          <li><a href="services.html#content"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Content Creation</a></li>
+          <li><a href="services.html#design"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Graphic Design</a></li>
+          <li><a href="request-quote.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Get a Free Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Get in Touch</h4>
+        <div class="footer-address">
+          <p style="margin-bottom:.7rem;"><i class="fa-solid fa-location-dot" style="color:var(--blue-light);margin-right:.5rem;"></i>Meydan Grandstand, 6th Floor,<br/>Meydan Rd, Nad Al Sheba, Dubai, UAE</p>
+          <p style="margin-bottom:.5rem;"><i class="fa-solid fa-phone" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="tel:+971552594585">+971 55 259 4585</a></p>
+          <p><i class="fa-solid fa-envelope" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="mailto:contact@onlinepromax.com">contact@onlinepromax.com</a></p>
+        </div>
+        <h4 class="footer-col-title" style="margin-top:1.5rem;">Newsletter</h4>
+        <p style="font-size:.79rem;color:rgba(210,226,255,.55);margin-bottom:.5rem;">Stay updated with Online Pro Max news.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email" required />
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Online Pro Max LLC. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="blog-post.js"></script>
+</body>
+</html>

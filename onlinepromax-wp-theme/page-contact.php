@@ -1,0 +1,363 @@
+<?php
+/**
+ * Template Name: Contact
+ * Description: Auto-converted from contact.html
+ */
+opm_enqueue_page_assets( 'contact' );
+get_header();
+?>
+
+
+
+<!-- ══ HERO ════════════════════════════════════════════════════ -->
+<section class="ct-hero">
+  <div class="ct-hero-glow-1"></div>
+  <div class="ct-hero-glow-2"></div>
+  <div class="ct-hero-grid"></div>
+  <div class="container ct-hero-inner">
+    <div class="ct-hero-label">
+      <div class="ct-hero-label-line"></div>
+      <span>Online Pro Max — Let's Connect</span>
+      <div class="ct-hero-label-line"></div>
+    </div>
+    <h1 class="ct-hero-title">
+      <span class="line"><span class="word">Let's Make</span></span>
+      <span class="line"><span class="word w2">It</span>&nbsp;<span class="word w3 accent">Happen!</span></span>
+    </h1>
+    <p class="ct-hero-sub">
+      Whether you're looking for expert digital marketing, custom software development, or standout content and design — Online Pro Max is here to bring your vision to life. Reach out today and take the first step toward innovation and success.
+    </p>
+    <div class="ct-hero-btns">
+      <a href="https://wa.me/971552594585" target="_blank" rel="noopener" class="btn btn-blue">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Us Now
+      </a>
+      <a href="#ct-main" class="btn-white-outline">
+        <i class="fa-solid fa-envelope"></i> Send a Message
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BREADCRUMB ═════════════════════════════════════════════ -->
+<div class="breadcrumb">
+  <div class="container">
+    <a href="/">Home</a>
+    <i class="fa-solid fa-chevron-right"></i>
+    <span>Contact Us</span>
+  </div>
+</div>
+
+<!-- ══ CONTACT INFO CARDS ══════════════════════════════════════ -->
+<section id="ct-info">
+  <div class="container">
+    <div class="ct-info-grid">
+
+      <!-- Phone 1 -->
+      <div class="ct-info-card">
+        <div class="ct-info-icon" style="background:linear-gradient(135deg,var(--navy-mid),var(--blue));"><i class="fa-solid fa-phone"></i></div>
+        <div class="ct-info-label">Call or WhatsApp</div>
+        <div class="ct-info-value">
+          <a href="tel:+971552594585">+971 55 259 4585</a>
+        </div>
+        <div class="ct-info-sub">Primary line — Call or WhatsApp</div>
+        <a href="https://wa.me/971552594585" target="_blank" rel="noopener" class="ct-info-cta">
+          <i class="fa-brands fa-whatsapp"></i> Open WhatsApp
+        </a>
+      </div>
+
+      <!-- Phone 2 -->
+      <div class="ct-info-card">
+        <div class="ct-info-icon" style="background:linear-gradient(135deg,#25d366,#1da851);"><i class="fa-brands fa-whatsapp"></i></div>
+        <div class="ct-info-label">Call or WhatsApp</div>
+        <div class="ct-info-value">
+          <a href="tel:+971552594585">+971 55 259 4585</a>
+        </div>
+        <div class="ct-info-sub">Secondary line — Call or WhatsApp</div>
+        <a href="https://wa.me/971552594585" target="_blank" rel="noopener" class="ct-info-cta">
+          <i class="fa-brands fa-whatsapp"></i> Open WhatsApp
+        </a>
+      </div>
+
+      <!-- Email -->
+      <div class="ct-info-card">
+        <div class="ct-info-icon" style="background:linear-gradient(135deg,#ea4335,#f87171);"><i class="fa-solid fa-envelope"></i></div>
+        <div class="ct-info-label">Contact Mail</div>
+        <div class="ct-info-value">
+          <a href="mailto:contact@onlinepromax.com">contact@onlinepromax.com</a>
+        </div>
+        <div class="ct-info-sub">We respond within 24 hours</div>
+        <a href="mailto:contact@onlinepromax.com" class="ct-info-cta">
+          <i class="fa-solid fa-paper-plane"></i> Send Email
+        </a>
+      </div>
+
+      <!-- Location -->
+      <div class="ct-info-card">
+        <div class="ct-info-icon" style="background:linear-gradient(135deg,#d97706,#fbbf24);"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="ct-info-label">Office Location</div>
+        <div class="ct-info-value">Meydan Grandstand,<br/>6th Floor, Dubai, UAE</div>
+        <div class="ct-info-sub">Meydan Rd, Nad Al Sheba</div>
+        <a href="https://maps.app.goo.gl/hfBmtHsvFfum3scp9" target="_blank" rel="noopener" class="ct-info-cta">
+          <i class="fa-solid fa-map-location-dot"></i> Get Directions
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ SOCIAL MEDIA LINKS ══════════════════════════════════════ -->
+<section id="ct-social">
+  <div class="container">
+    <div class="ct-social-hdr reveal">
+      <div style="font-family:var(--font-mono);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);display:inline-block;padding:.3rem .8rem;border:1px solid var(--border-mid);border-radius:50px;background:var(--blue-ultra);margin-bottom:.8rem;">Follow Us</div>
+      <h2>Connect With Us on Social Media</h2>
+    </div>
+    <div class="ct-social-grid">
+
+      <a href="https://www.facebook.com/onlinepromax" target="_blank" rel="noopener" class="ct-social-card ct-social-facebook">
+        <div class="ct-social-icon"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="ct-social-name">Facebook</div>
+        <div class="ct-social-handle">@onlinepromax</div>
+        <span class="ct-social-follow">Follow</span>
+      </a>
+
+      <a href="https://www.instagram.com/onlinepromax" target="_blank" rel="noopener" class="ct-social-card ct-social-instagram">
+        <div class="ct-social-icon"><i class="fa-brands fa-instagram"></i></div>
+        <div class="ct-social-name">Instagram</div>
+        <div class="ct-social-handle">@onlinepromax_dubai</div>
+        <span class="ct-social-follow">Follow</span>
+      </a>
+
+      <a href="https://x.com/onlinepromax" target="_blank" rel="noopener" class="ct-social-card ct-social-x">
+        <div class="ct-social-icon"><i class="fa-brands fa-x-twitter"></i></div>
+        <div class="ct-social-name">X / Twitter</div>
+        <div class="ct-social-handle">@OnlineProMax</div>
+        <span class="ct-social-follow">Follow</span>
+      </a>
+
+      <a href="https://www.linkedin.com/company/onlinepromax/" target="_blank" rel="noopener" class="ct-social-card ct-social-linkedin">
+        <div class="ct-social-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+        <div class="ct-social-name">LinkedIn</div>
+        <div class="ct-social-handle">Online Pro Max</div>
+        <span class="ct-social-follow">Connect</span>
+      </a>
+
+      <a href="https://www.youtube.com/@onlinepromax" target="_blank" rel="noopener" class="ct-social-card ct-social-youtube">
+        <div class="ct-social-icon"><i class="fa-brands fa-youtube"></i></div>
+        <div class="ct-social-name">YouTube</div>
+        <div class="ct-social-handle">@OnlineProMax</div>
+        <span class="ct-social-follow">Subscribe</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ FORM + MAP ══════════════════════════════════════════════ -->
+<section id="ct-main">
+  <div class="container">
+    <div class="ct-main-grid">
+
+      <!-- FORM CARD -->
+      <div class="reveal-left">
+        <div class="ct-form-card">
+          <div class="ct-form-header">
+            <div class="ct-form-header-badge">
+              <i class="fa-solid fa-paper-plane"></i> Free Consultation
+            </div>
+            <h2 class="ct-form-title">Send Us a Message</h2>
+            <p class="ct-form-subtitle">Fill in the form and we'll get back to you within 24 hours</p>
+          </div>
+          <div class="ct-form-body">
+            <div id="ct-form-wrap">
+              <form id="ct-form" novalidate>
+                <div class="ct-field-grid">
+
+                  <div class="ct-field full">
+                    <label class="ct-label">Full Name <span class="req">*</span></label>
+                    <div class="ct-input-wrap">
+                      <i class="fa-solid fa-user fi"></i>
+                      <input type="text" class="ct-input" placeholder="e.g. Khalid Al Marzooqi" required />
+                    </div>
+                    <span class="ct-error-msg">Please enter your full name</span>
+                  </div>
+
+                  <div class="ct-field">
+                    <label class="ct-label">Email Address <span class="req">*</span></label>
+                    <div class="ct-input-wrap">
+                      <i class="fa-solid fa-envelope fi"></i>
+                      <input type="email" class="ct-input" placeholder="you@email.com" required />
+                    </div>
+                    <span class="ct-error-msg">Please enter a valid email</span>
+                  </div>
+
+                  <div class="ct-field">
+                    <label class="ct-label">Phone Number <span class="req">*</span></label>
+                    <div class="ct-input-wrap">
+                      <i class="fa-solid fa-phone fi"></i>
+                      <input type="tel" class="ct-input" placeholder="+971 XX XXX XXXX" required />
+                    </div>
+                    <span class="ct-error-msg">Please enter your phone number</span>
+                  </div>
+
+                  <div class="ct-field full">
+                    <label class="ct-label">Company / Organisation <span style="font-size:.68rem;color:var(--text-dim);font-weight:400;">(optional)</span></label>
+                    <div class="ct-input-wrap">
+                      <i class="fa-solid fa-building fi"></i>
+                      <input type="text" class="ct-input" placeholder="e.g. Al Noor Trading LLC" />
+                    </div>
+                  </div>
+
+                  <div class="ct-field full">
+                    <label class="ct-label">What Can We Help You With? <span class="req">*</span></label>
+                    <div class="ct-select-wrap">
+                      <select class="ct-select" required>
+                        <option value="" disabled selected>Select a service area</option>
+                        <option>Digital Marketing &amp; Social Media Ads</option>
+                        <option>Meta / Facebook &amp; Instagram Ads</option>
+                        <option>Google Ads &amp; PPC</option>
+                        <option>LinkedIn Advertising &amp; B2B Marketing</option>
+                        <option>SEO &amp; Content Marketing</option>
+                        <option>Lead Generation &amp; Sales Funnels</option>
+                        <option>Website Design &amp; Development</option>
+                        <option>Content Creation &amp; Branding</option>
+                        <option>Event Planning &amp; Management</option>
+                        <option>Become a Sponsor</option>
+                        <option>Education Advisory &amp; Study Abroad</option>
+                        <option>Join Our Educational Network</option>
+                        <option>Media Coverage &amp; PR</option>
+                        <option>Photography &amp; Videography</option>
+                        <option>Career / Join Our Team</option>
+                        <option>General Inquiry</option>
+                      </select>
+                    </div>
+                    <span class="ct-error-msg">Please select a topic</span>
+                  </div>
+
+                  <div class="ct-field full">
+                    <label class="ct-label">Message <span class="req">*</span></label>
+                    <textarea
+                      id="ct-message"
+                      class="ct-textarea"
+                      placeholder="Tell us about your project, goals, timeline, or anything else you'd like us to know..."
+                      maxlength="600"
+                      required
+                    ></textarea>
+                    <div style="display:flex;justify-content:space-between;margin-top:.25rem;">
+                      <span class="ct-error-msg" style="margin:0;">Please write a message</span>
+                      <span style="font-size:.7rem;color:var(--text-dim);" id="ct-msg-count">0/600</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <button type="submit" class="ct-btn-submit">
+                  <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+                <p class="ct-form-note">
+                  <i class="fa-solid fa-lock"></i>
+                  Your message is confidential. We respond within 24 hours on business days. You can also reach us directly on WhatsApp at <a href="https://wa.me/971552594585" style="color:var(--blue);font-weight:600;">+971 55 259 4585</a>.
+                </p>
+              </form>
+            </div>
+
+            <!-- Success -->
+            <div id="ct-success" class="ct-success">
+              <div class="ct-success-icon"><i class="fa-solid fa-check"></i></div>
+              <h3>Message Received! &#127775;</h3>
+              <p>Thank you for reaching out to Online Pro Max. We've received your message and will get back to you within <strong>24 hours</strong> on business days. You can also reach us directly on WhatsApp if it's urgent.</p>
+              <div class="ct-success-actions">
+                <a href="https://wa.me/971552594585" target="_blank" class="btn btn-blue"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+                <a href="/" class="btn btn-outline"><i class="fa-solid fa-house"></i> Back to Home</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- MAP + QUICK CONTACT -->
+      <div class="ct-map-panel reveal-right">
+
+        <!-- Google Map -->
+        <div class="ct-map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.2!2d55.2969!3d25.1521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69e7736e1a4f%3A0x0!2sMeydan+Grandstand%2C+Dubai!5e0!3m2!1sen!2sae!4v1234567890"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Online Pro Max — Meydan Grandstand, 6th Floor, Dubai"
+          ></iframe>
+        </div>
+
+        <!-- Quick contact rows -->
+        <div class="ct-quick-list">
+
+          <div class="ct-quick-item">
+            <div class="ct-quick-icon" style="background:linear-gradient(135deg,var(--navy-mid),var(--blue));"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="ct-quick-label">Phone &amp; WhatsApp (Primary)</div>
+              <div class="ct-quick-value"><a href="tel:+971552594585">+971 55 259 4585</a></div>
+              <div class="ct-quick-sub">Call or WhatsApp — Available 24/7</div>
+            </div>
+          </div>
+
+          <div class="ct-quick-item">
+            <div class="ct-quick-icon" style="background:linear-gradient(135deg,#25d366,#1da851);"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <div class="ct-quick-label">Phone &amp; WhatsApp (Secondary)</div>
+              <div class="ct-quick-value"><a href="tel:+971552594585">+971 55 259 4585</a></div>
+              <div class="ct-quick-sub">Call or WhatsApp — Available 24/7</div>
+            </div>
+          </div>
+
+          <div class="ct-quick-item">
+            <div class="ct-quick-icon" style="background:linear-gradient(135deg,#ea4335,#f87171);"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="ct-quick-label">Email</div>
+              <div class="ct-quick-value"><a href="mailto:contact@onlinepromax.com">contact@onlinepromax.com</a></div>
+              <div class="ct-quick-sub">Response within 24 business hours</div>
+            </div>
+          </div>
+
+          <div class="ct-quick-item">
+            <div class="ct-quick-icon" style="background:linear-gradient(135deg,#d97706,#fbbf24);"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="ct-quick-label">Office Address</div>
+              <div class="ct-quick-value">Meydan Grandstand, 6th Floor</div>
+              <div class="ct-quick-sub">Meydan Rd, Nad Al Sheba, Dubai, UAE</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Business hours -->
+        <div class="ct-hours-card">
+          <h3 class="ct-hours-title"><i class="fa-solid fa-clock"></i> Business Hours</h3>
+          <div class="ct-hours-row">
+            <span class="ct-hours-day">Monday – Friday</span>
+            <span class="ct-hours-time available">9:00 AM – 6:00 PM</span>
+          </div>
+          <div class="ct-hours-row">
+            <span class="ct-hours-day">Saturday</span>
+            <span class="ct-hours-time available">10:00 AM – 4:00 PM</span>
+          </div>
+          <div class="ct-hours-row">
+            <span class="ct-hours-day">Sunday</span>
+            <span class="ct-hours-time" style="color:var(--text-dim);">Closed</span>
+          </div>
+          <div style="margin-top:1rem;padding:.7rem 1rem;background:var(--blue-ultra);border-radius:var(--radius-sm);border:1px solid var(--border-light);font-size:.8rem;color:var(--navy-deep);display:flex;align-items:center;gap:.5rem;">
+            <i class="fa-brands fa-whatsapp" style="color:#25d366;"></i>
+            <span>WhatsApp available <strong>24/7</strong> for urgent inquiries</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<?php get_footer(); ?>
