@@ -95,9 +95,9 @@ get_header();
       <div class="ct-info-card">
         <div class="ct-info-icon" style="background:linear-gradient(135deg,#d97706,#fbbf24);"><i class="fa-solid fa-location-dot"></i></div>
         <div class="ct-info-label">Office Location</div>
-        <div class="ct-info-value">Meydan Grandstand,<br/>6th Floor, Dubai, UAE</div>
-        <div class="ct-info-sub">Meydan Rd, Nad Al Sheba</div>
-        <a href="https://maps.app.goo.gl/hfBmtHsvFfum3scp9" target="_blank" rel="noopener" class="ct-info-cta">
+        <div class="ct-info-value">Business Bay,<br/>Churchill Tower, 806</div>
+        <div class="ct-info-sub">Dubai, UAE</div>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Churchill+Tower+Business+Bay+Dubai" target="_blank" rel="noopener" class="ct-info-cta">
           <i class="fa-solid fa-map-location-dot"></i> Get Directions
         </a>
       </div>
@@ -283,11 +283,11 @@ get_header();
         <!-- Google Map -->
         <div class="ct-map-wrap">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.2!2d55.2969!3d25.1521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69e7736e1a4f%3A0x0!2sMeydan+Grandstand%2C+Dubai!5e0!3m2!1sen!2sae!4v1234567890"
+            src="https://maps.google.com/maps?q=Churchill+Tower,+Business+Bay,+Dubai&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            title="Online Pro Max — Meydan Grandstand, 6th Floor, Dubai"
+            title="Online Pro Max — Business Bay, Churchill Tower, 806, Dubai"
           ></iframe>
         </div>
 
@@ -325,8 +325,8 @@ get_header();
             <div class="ct-quick-icon" style="background:linear-gradient(135deg,#d97706,#fbbf24);"><i class="fa-solid fa-location-dot"></i></div>
             <div>
               <div class="ct-quick-label">Office Address</div>
-              <div class="ct-quick-value">Meydan Grandstand, 6th Floor</div>
-              <div class="ct-quick-sub">Meydan Rd, Nad Al Sheba, Dubai, UAE</div>
+              <div class="ct-quick-value">Business Bay, Churchill Tower, 806</div>
+              <div class="ct-quick-sub">Dubai, UAE</div>
             </div>
           </div>
 

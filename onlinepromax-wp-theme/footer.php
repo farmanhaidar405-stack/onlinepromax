@@ -4,7 +4,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-logo">
-          <a href="/"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/online-pro-max-logo.svg' ); ?>" alt="Online Pro Max" style="filter:brightness(0) invert(1);" /></a>
+          <a href="/"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/online-pro-max-logo.png' ); ?>" alt="Online Pro Max" /></a>
         </div>
         <p class="footer-brand-desc">Online Pro Max is an international marketing and software solutions company — delivering digital marketing, custom software, content creation, and graphic design that drives real growth for brands worldwide.</p>
         <div class="footer-socials">
@@ -39,7 +39,7 @@
       <div>
         <h4 class="footer-col-title">Get in Touch</h4>
         <div class="footer-address">
-          <p style="margin-bottom:.7rem;"><i class="fa-solid fa-location-dot" style="color:var(--blue-light);margin-right:.5rem;"></i>Meydan Grandstand, 6th Floor,<br/>Meydan Rd, Nad Al Sheba,<br/>Dubai, UAE</p>
+          <p style="margin-bottom:.7rem;"><i class="fa-solid fa-location-dot" style="color:var(--blue-light);margin-right:.5rem;"></i>Business Bay, Churchill Tower,<br/>Office 806,<br/>Dubai, UAE</p>
           <p style="margin-bottom:.5rem;"><i class="fa-solid fa-phone" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="tel:+971552594585">+971 55 259 4585</a></p>
           <p><i class="fa-solid fa-envelope" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="mailto:contact@onlinepromax.com">contact@onlinepromax.com</a></p>
         </div>

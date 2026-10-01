@@ -100,6 +100,71 @@ function opm_save_post_meta( $post_id ) {
 add_action( 'save_post', 'opm_save_post_meta' );
 
 /* ---------------------------------------------------------
+   Favicon — uses the theme logo icon unless a Site Icon has
+   been set in Appearance → Customize → Site Identity.
+--------------------------------------------------------- */
+function opm_output_favicon() {
+	if ( function_exists( 'has_site_icon' ) && has_site_icon() ) return;
+	$dir = get_template_directory_uri() . '/assets/';
+	echo '<link rel="icon" type="image/x-icon" href="' . esc_url( $dir . 'favicon.ico' ) . '" sizes="any" />' . "\n";
+	echo '<link rel="icon" type="image/png" sizes="32x32" href="' . esc_url( $dir . 'favicon-32x32.png' ) . '" />' . "\n";
+	echo '<link rel="icon" type="image/png" sizes="192x192" href="' . esc_url( $dir . 'favicon-192x192.png' ) . '" />' . "\n";
+	echo '<link rel="apple-touch-icon" sizes="180x180" href="' . esc_url( $dir . 'apple-touch-icon.png' ) . '" />' . "\n";
+}
+add_action( 'wp_head', 'opm_output_favicon', 2 );
+add_action( 'admin_head', 'opm_output_favicon' );
+add_action( 'login_head', 'opm_output_favicon' );
+
+/* ---------------------------------------------------------
+   Blog post images
+   The WordPress importer cannot download the extension-less
+   Unsplash featured images in onlinepromax-content-import.xml,
+   so posts end up with no thumbnail. This helper falls back to:
+   featured image → known image for the post slug → first image
+   in the post content → an image matching the post category.
+--------------------------------------------------------- */
+function opm_get_post_image( $post_id = null, $size = 'large' ) {
+	$post_id = $post_id ? $post_id : get_the_ID();
+
+	$thumb = get_the_post_thumbnail_url( $post_id, $size );
+	if ( $thumb ) return $thumb;
+
+	$w = ( 'thumbnail' === $size ) ? 240 : ( ( 'medium' === $size ) ? 800 : 1200 );
+	$unsplash = function( $id ) use ( $w ) {
+		return 'https://images.unsplash.com/' . $id . '?w=' . $w . '&auto=format&fit=crop&q=80';
+	};
+
+	$by_slug = array(
+		'ai-marketing-automation-2026'       => 'photo-1677756119517-756a188d2d94',
+		'cloud-native-software-architecture' => 'photo-1555066931-4365d14bab8c',
+		'generative-ai-content-creation'     => 'photo-1620641788421-7a1c342ea42e',
+		'zero-party-data-privacy-marketing'  => 'photo-1531746790731-6c087fecd65a',
+		'low-code-no-code-platforms'         => 'photo-1547658719-da2b51169166',
+		'meta-ads-vs-google-ads-2025'        => 'photo-1665799871677-f1fd17338b43',
+	);
+	$slug = get_post_field( 'post_name', $post_id );
+	if ( isset( $by_slug[ $slug ] ) ) return $unsplash( $by_slug[ $slug ] );
+
+	$content = get_post_field( 'post_content', $post_id );
+	if ( $content && preg_match( '/<img[^>]+src=["\']([^"\']+)["\']/i', $content, $m ) ) {
+		return $m[1];
+	}
+
+	$by_cat = array(
+		'digital-marketing'    => 'photo-1432888622747-4eb9a8efeb07',
+		'software-development' => 'photo-1555066931-4365d14bab8c',
+		'web-development'      => 'photo-1547658719-da2b51169166',
+		'content-creation'     => 'photo-1620641788421-7a1c342ea42e',
+		'graphic-design'       => 'photo-1713616147761-c126f8009c6f',
+	);
+	foreach ( get_the_category( $post_id ) as $cat ) {
+		if ( isset( $by_cat[ $cat->slug ] ) ) return $unsplash( $by_cat[ $cat->slug ] );
+	}
+
+	return $unsplash( 'photo-1432888622747-4eb9a8efeb07' );
+}
+
+/* ---------------------------------------------------------
    Company contact details as reusable constants/shortcodes
 --------------------------------------------------------- */
 define( 'OPM_PHONE', '+971 55 259 4585' );

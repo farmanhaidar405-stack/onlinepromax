@@ -63,8 +63,7 @@ get_header();
           $is_featured = ( $i === 1 && $paged === 1 );
           $cat_list = get_the_category();
           $cat_slugs = implode( ' ', wp_list_pluck( $cat_list, 'slug' ) );
-          $thumb = get_the_post_thumbnail_url( get_the_ID(), $is_featured ? 'large' : 'medium' );
-          if ( ! $thumb ) $thumb = get_template_directory_uri() . '/assets/online-pro-max-logo.svg';
+          $thumb = opm_get_post_image( get_the_ID(), $is_featured ? 'large' : 'medium' );
           $read_time = get_post_meta( get_the_ID(), 'opm_read_time', true );
           if ( ! $read_time ) $read_time = '8';
       ?>

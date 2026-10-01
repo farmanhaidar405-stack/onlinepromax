@@ -13,8 +13,7 @@ while ( have_posts() ) : the_post();
 	if ( ! $cat_label && ! empty( $categories ) ) $cat_label = $categories[0]->name;
 	if ( ! $cat_label ) $cat_label = 'Insights';
 
-	$hero_img = get_the_post_thumbnail_url( get_the_ID(), 'large' );
-	if ( ! $hero_img ) $hero_img = get_template_directory_uri() . '/assets/online-pro-max-logo.svg';
+	$hero_img = opm_get_post_image( get_the_ID(), 'large' );
 ?>
 
 <!-- POST HERO -->
@@ -101,8 +100,7 @@ while ( have_posts() ) : the_post();
         ) );
         if ( $related->have_posts() ) :
           while ( $related->have_posts() ) : $related->the_post();
-            $thumb = get_the_post_thumbnail_url( get_the_ID(), 'thumbnail' );
-            if ( ! $thumb ) $thumb = get_template_directory_uri() . '/assets/online-pro-max-logo.svg';
+            $thumb = opm_get_post_image( get_the_ID(), 'thumbnail' );
         ?>
         <a href="<?php the_permalink(); ?>" class="bp-related-item" style="display:flex;">
           <img src="<?php echo esc_url( $thumb ); ?>" alt="" class="bp-related-img" />

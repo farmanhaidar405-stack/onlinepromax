@@ -236,7 +236,7 @@ get_header();
             <i class="fa-solid fa-location-dot"></i>
             <div>
               <p style="font-size:.82rem;color:var(--text-dim);margin-bottom:.2rem;">Registered Office</p>
-              <span style="font-size:.9rem;color:var(--text-secondary);">Online Pro Max LLC FZ — Meydan Grandstand, 6th Floor, Meydan Rd, Nad Al Sheba, Dubai, UAE</span>
+              <span style="font-size:.9rem;color:var(--text-secondary);">Online Pro Max LLC FZ — Business Bay, Churchill Tower, 806, Dubai, UAE</span>
             </div>
           </div>
         </div>

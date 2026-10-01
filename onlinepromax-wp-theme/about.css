@@ -254,6 +254,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .ab-services-header{text-align:center;max-width:640px;margin:0 auto 5rem}
 .ab-services-header p{font-size:.95rem;color:var(--text-dim);margin-top:.8rem}
 .ab-pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.ab-pillars-grid--4{grid-template-columns:repeat(4,1fr)}
 .ab-pillar{background:var(--bg-2);border:1px solid var(--border-light);border-radius:var(--radius-lg);padding:3rem 2.4rem;transition:var(--transition);position:relative;overflow:hidden;display:flex;flex-direction:column}
 .ab-pillar::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--pillar-color,linear-gradient(90deg,var(--blue),var(--blue-light)));transform:scaleX(0);transform-origin:left;transition:transform .45s ease}
 .ab-pillar:hover{transform:translateY(-8px);box-shadow:0 28px 72px rgba(14,26,58,.12);background:#fff;border-color:var(--border-mid)}

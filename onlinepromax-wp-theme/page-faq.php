@@ -84,7 +84,7 @@ get_header();
           <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
         </div>
         <div class="faq-a">
-          <div class="faq-a-inner">Absolutely! You can request a consultation through our <a href="/contact/" style="color:var(--blue);font-weight:600;">Contact page</a>. Simply fill in your details and preferred time, and a member of our team will confirm your meeting slot within 24 hours. We offer both in-person meetings at our Meydan Grandstand office and virtual consultations via video call.</div>
+          <div class="faq-a-inner">Absolutely! You can request a consultation through our <a href="/contact/" style="color:var(--blue);font-weight:600;">Contact page</a>. Simply fill in your details and preferred time, and a member of our team will confirm your meeting slot within 24 hours. We offer both in-person meetings at our Business Bay office (Churchill Tower, 806) and virtual consultations via video call.</div>
         </div>
       </div>
     </div>

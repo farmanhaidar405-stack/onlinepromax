@@ -129,7 +129,7 @@ get_header();
           Our integrated team of digital marketers, developers, designers, and content creators work as one cohesive unit. No juggling multiple agencies, no brand inconsistency — just one smart, driven team delivering across digital marketing, web &amp; app development, content creation, and graphic design.
         </p>
         <p class="ab-intro-body">
-          Based at the iconic Meydan Grandstand, we combine UAE market expertise with global ambition — building campaigns and digital products that perform here and resonate internationally.
+          Based at Churchill Tower in Business Bay, we combine UAE market expertise with global ambition — building campaigns and digital products that perform here and resonate internationally.
         </p>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;">
           <a href="/contact/" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Connect With Us</a>
@@ -179,7 +179,7 @@ get_header();
       <h2 class="heading-lg reveal delay-1">Four Pillars of<br/><span class="blue-gradient-soft">Online Pro Max Excellence</span></h2>
       <p class="reveal delay-2">We operate across four interconnected service areas — each one designed to create extraordinary digital outcomes for the brands and businesses we serve.</p>
     </div>
-    <div class="ab-pillars-grid" style="grid-template-columns:repeat(4,1fr);">
+    <div class="ab-pillars-grid ab-pillars-grid--4">
 
       <div class="ab-pillar reveal">
         <div class="ab-pillar-num">01</div>
@@ -290,14 +290,14 @@ get_header();
         <div class="tag">Find Us</div>
         <h2 class="ab-location-text" style="font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:700;color:var(--navy-deep);margin-bottom:1.2rem;line-height:1.1;">Based in the Heart<br/>of <span class="blue-gradient-soft">Dubai, UAE</span></h2>
         <p style="font-size:.95rem;color:var(--text-secondary);line-height:1.82;margin-bottom:2rem;">
-          Located at the iconic Meydan Grandstand on the 6th floor, Online Pro Max is perfectly positioned at the intersection of sport, culture, and enterprise in one of the world's most dynamic cities. Come visit us, or reach out — we're always ready to talk.
+          Located at Churchill Tower (Office 806) in Business Bay, Online Pro Max is perfectly positioned in the heart of Dubai's central business district — one of the world's most dynamic cities. Come visit us, or reach out — we're always ready to talk.
         </p>
         <div class="ab-location-items">
           <div class="ab-location-item">
             <div class="ab-location-item-icon"><i class="fa-solid fa-location-dot"></i></div>
             <div>
               <div class="ab-location-item-label">Address</div>
-              <div class="ab-location-item-value">Meydan Grandstand, 6th Floor, Meydan Rd, Nad Al Sheba, Dubai, UAE</div>
+              <div class="ab-location-item-value">Business Bay, Churchill Tower, 806, Dubai, UAE</div>
             </div>
           </div>
           <div class="ab-location-item">
@@ -322,14 +322,14 @@ get_header();
             </div>
           </div>
         </div>
-        <a href="https://maps.app.goo.gl/hfBmtHsvFfum3scp9" target="_blank" rel="noopener" class="btn btn-blue">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Churchill+Tower+Business+Bay+Dubai" target="_blank" rel="noopener" class="btn btn-blue">
           <i class="fa-solid fa-map-location-dot"></i> Get Directions
         </a>
       </div>
 
       <div class="ab-location-map reveal-right">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.2!2d55.2969!3d25.1521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69e7736e1a4f%3A0x0!2sMeydan+Grandstand%2C+Dubai!5e0!3m2!1sen!2sae!4v1234567890"
+          src="https://maps.google.com/maps?q=Churchill+Tower,+Business+Bay,+Dubai&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"

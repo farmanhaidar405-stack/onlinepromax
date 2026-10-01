@@ -28,7 +28,7 @@
 <nav id="mobile-nav" class="mobile-nav">
   <div class="mobile-nav-header">
     <a href="/" class="mobile-nav-logo">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/online-pro-max-logo.svg' ); ?>" alt="Online Pro Max" />
+      <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/online-pro-max-logo.png' ); ?>" alt="Online Pro Max" />
     </a>
     <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu" onclick="window.closeMobileNav()">
       <i class="fa-solid fa-xmark"></i>
@@ -77,7 +77,7 @@
     <div class="top-bar-left">
       <a href="mailto:contact@onlinepromax.com"><i class="fa-solid fa-envelope"></i> contact@onlinepromax.com</a>
       <a href="tel:+971552594585"><i class="fa-solid fa-phone"></i> +971 55 259 4585</a>
-      <span><i class="fa-solid fa-location-dot"></i> Meydan Grandstand, 6th Floor, Dubai, UAE</span>
+      <span><i class="fa-solid fa-location-dot"></i> Business Bay, Churchill Tower, 806, Dubai, UAE</span>
     </div>
     <div class="top-bar-right">
       <a href="https://www.facebook.com/onlinepromax" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
@@ -93,7 +93,7 @@
 <header id="navbar">
   <div class="nav-inner">
     <a href="/" class="nav-logo">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/online-pro-max-logo.svg' ); ?>" alt="Online Pro Max" />
+      <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/online-pro-max-logo.png' ); ?>" alt="Online Pro Max" />
     </a>
     <nav class="nav-menu">
       <a href="/" class="nav-link active">Home</a>
