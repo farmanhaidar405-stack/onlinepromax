@@ -39,7 +39,7 @@
       <a href="/" class="mobile-nav-link no-dropdown">Home</a>
     </div>
     <div class="mobile-nav-item" data-dropdown>
-      <div class="mobile-nav-link">Services <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-nav-link" role="button" tabindex="0" aria-expanded="false">Services <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
       <div class="mobile-dropdown">
         <a href="/services/"><i class="fa-solid fa-grid-2 fa-fw"></i> All Services</a>
         <a href="/services/#digital-marketing"><i class="fa-solid fa-chart-line fa-fw"></i> Digital Marketing</a>
@@ -53,7 +53,7 @@
       <a href="/portfolio/" class="mobile-nav-link no-dropdown">Portfolio</a>
     </div>
     <div class="mobile-nav-item" data-dropdown>
-      <div class="mobile-nav-link">Company <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-nav-link" role="button" tabindex="0" aria-expanded="false">Company <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
       <div class="mobile-dropdown">
         <a href="/about/"><i class="fa-solid fa-building fa-fw"></i> About Us</a>
         <a href="/careers/"><i class="fa-solid fa-briefcase fa-fw"></i> Join Our Team</a>

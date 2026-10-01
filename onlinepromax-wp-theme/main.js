@@ -32,6 +32,35 @@ window.closeMobileNav = function() {
   }, 350);
 };
 
+/* ── Mobile nav accordions (Services / Company) ──
+   Handled once, in the capture phase, and the event is stopped there.
+   Page scripts (about.js, blog.js, services.js …) also bind a toggle to
+   the same element; with two toggles a tap opened and immediately
+   closed the submenu, so it looked like nothing happened. */
+document.addEventListener('click', function(e) {
+  var trigger = e.target.closest ? e.target.closest('.mobile-nav-item[data-dropdown] > .mobile-nav-link') : null;
+  if (!trigger) return;
+  e.preventDefault();
+  e.stopPropagation();
+  var item   = trigger.parentNode;
+  var isOpen = item.classList.contains('open');
+  document.querySelectorAll('.mobile-nav-item[data-dropdown].open').forEach(function(el) {
+    el.classList.remove('open');
+    var t = el.querySelector('.mobile-nav-link');
+    if (t) t.setAttribute('aria-expanded', 'false');
+  });
+  if (!isOpen) {
+    item.classList.add('open');
+    trigger.setAttribute('aria-expanded', 'true');
+  }
+}, true);
+document.addEventListener('keydown', function(e) {
+  if (e.key !== 'Enter' && e.key !== ' ') return;
+  if (!e.target.matches || !e.target.matches('.mobile-nav-item[data-dropdown] > .mobile-nav-link')) return;
+  e.preventDefault();
+  e.target.click();
+});
+
 document.addEventListener('DOMContentLoaded', function() {
 
   /* ── Re-bind hamburger + close in case they were parsed late ── */
@@ -54,17 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  /* accordion dropdowns */
-  document.querySelectorAll('.mobile-nav-item[data-dropdown]').forEach(function(item) {
-    var trigger = item.querySelector('.mobile-nav-link');
-    if (!trigger) return;
-    trigger.addEventListener('click', function() {
-      var isOpen = item.classList.contains('open');
-      document.querySelectorAll('.mobile-nav-item[data-dropdown].open')
-        .forEach(function(el) { el.classList.remove('open'); });
-      if (!isOpen) item.classList.add('open');
-    });
-  });
+  /* accordion dropdowns — see the capture-phase handler below DOMContentLoaded */
 
   /* ── Custom Cursor (desktop only) ──────────────────── */
   var cursor   = document.querySelector('.cursor');
