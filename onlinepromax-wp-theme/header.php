@@ -38,8 +38,8 @@
     <div class="mobile-nav-item">
       <a href="/" class="mobile-nav-link no-dropdown">Home</a>
     </div>
-    <div class="mobile-nav-item" data-dropdown>
-      <div class="mobile-nav-link" role="button" tabindex="0" aria-expanded="false">Services <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+    <details class="mobile-nav-item mobile-nav-acc">
+      <summary class="mobile-nav-link">Services <i class="fa-solid fa-chevron-down mobile-chevron"></i></summary>
       <div class="mobile-dropdown">
         <a href="/services/"><i class="fa-solid fa-grid-2 fa-fw"></i> All Services</a>
         <a href="/services/#digital-marketing"><i class="fa-solid fa-chart-line fa-fw"></i> Digital Marketing</a>
@@ -48,12 +48,12 @@
         <a href="/services/#design"><i class="fa-solid fa-pen-ruler fa-fw"></i> Graphic Design</a>
         <a href="/media-pr/"><i class="fa-solid fa-newspaper fa-fw"></i> Media &amp; PR</a>
       </div>
-    </div>
+    </details>
     <div class="mobile-nav-item">
       <a href="/portfolio/" class="mobile-nav-link no-dropdown">Portfolio</a>
     </div>
-    <div class="mobile-nav-item" data-dropdown>
-      <div class="mobile-nav-link" role="button" tabindex="0" aria-expanded="false">Company <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+    <details class="mobile-nav-item mobile-nav-acc">
+      <summary class="mobile-nav-link">Company <i class="fa-solid fa-chevron-down mobile-chevron"></i></summary>
       <div class="mobile-dropdown">
         <a href="/about/"><i class="fa-solid fa-building fa-fw"></i> About Us</a>
         <a href="/careers/"><i class="fa-solid fa-briefcase fa-fw"></i> Join Our Team</a>
@@ -61,7 +61,7 @@
         <a href="/join-network/"><i class="fa-solid fa-network-wired fa-fw"></i> Join Our Network</a>
         <a href="/faq/"><i class="fa-solid fa-circle-question fa-fw"></i> FAQ</a>
       </div>
-    </div>
+    </details>
     <div class="mobile-nav-item">
       <a href="/blog/" class="mobile-nav-link no-dropdown">Blog</a>
     </div>

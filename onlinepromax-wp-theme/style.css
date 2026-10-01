@@ -114,6 +114,11 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .mobile-nav-item.open .mobile-chevron{transform:rotate(180deg)}
 .mobile-dropdown{display:none;padding:.3rem 0 .8rem 1rem;border-left:2px solid var(--blue-pale);margin-left:.5rem;margin-bottom:.5rem}
 .mobile-nav-item.open .mobile-dropdown{display:block}
+.mobile-nav-acc>summary{list-style:none}
+.mobile-nav-acc>summary::-webkit-details-marker{display:none}
+.mobile-nav-acc>summary::marker{content:''}
+.mobile-nav-acc[open] .mobile-dropdown{display:block}
+.mobile-nav-acc[open] .mobile-chevron{transform:rotate(180deg)}
 .mobile-dropdown a{display:flex;align-items:center;gap:.6rem;padding:.6rem .5rem;font-size:.88rem;color:var(--text-secondary);transition:color .2s}
 .mobile-dropdown a:hover{color:var(--blue)}.mobile-dropdown a i{color:var(--blue);opacity:.8;width:16px}
 .mobile-nav-footer{padding:1.2rem 1.5rem;border-top:1px solid var(--border-light)}

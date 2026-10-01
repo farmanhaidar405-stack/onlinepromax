@@ -29,37 +29,22 @@ window.closeMobileNav = function() {
     /* close any open accordions */
     var opens = nav.querySelectorAll('.mobile-nav-item.open');
     opens.forEach(function(el) { el.classList.remove('open'); });
+    nav.querySelectorAll('.mobile-nav-acc[open]').forEach(function(el) { el.open = false; });
   }, 350);
 };
 
 /* ── Mobile nav accordions (Services / Company) ──
-   Handled once, in the capture phase, and the event is stopped there.
-   Page scripts (about.js, blog.js, services.js …) also bind a toggle to
-   the same element; with two toggles a tap opened and immediately
-   closed the submenu, so it looked like nothing happened. */
-document.addEventListener('click', function(e) {
-  var trigger = e.target.closest ? e.target.closest('.mobile-nav-item[data-dropdown] > .mobile-nav-link') : null;
-  if (!trigger) return;
-  e.preventDefault();
-  e.stopPropagation();
-  var item   = trigger.parentNode;
-  var isOpen = item.classList.contains('open');
-  document.querySelectorAll('.mobile-nav-item[data-dropdown].open').forEach(function(el) {
-    el.classList.remove('open');
-    var t = el.querySelector('.mobile-nav-link');
-    if (t) t.setAttribute('aria-expanded', 'false');
+   Native <details>/<summary> in header.php, so they open with no JS at
+   all (not affected by cached scripts, JS-delay plugins, or the copies
+   of the old toggle code in the page scripts). This only keeps one
+   section open at a time. 'toggle' doesn't bubble, so listen in capture. */
+document.addEventListener('toggle', function(e) {
+  var d = e.target;
+  if (!d.classList || !d.classList.contains('mobile-nav-acc') || !d.open) return;
+  document.querySelectorAll('.mobile-nav-acc[open]').forEach(function(el) {
+    if (el !== d) el.open = false;
   });
-  if (!isOpen) {
-    item.classList.add('open');
-    trigger.setAttribute('aria-expanded', 'true');
-  }
 }, true);
-document.addEventListener('keydown', function(e) {
-  if (e.key !== 'Enter' && e.key !== ' ') return;
-  if (!e.target.matches || !e.target.matches('.mobile-nav-item[data-dropdown] > .mobile-nav-link')) return;
-  e.preventDefault();
-  e.target.click();
-});
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -83,7 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  /* accordion dropdowns — see the capture-phase handler below DOMContentLoaded */
 
   /* ── Custom Cursor (desktop only) ──────────────────── */
   var cursor   = document.querySelector('.cursor');

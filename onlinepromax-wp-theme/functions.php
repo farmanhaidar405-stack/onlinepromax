@@ -26,15 +26,20 @@ add_action( 'after_setup_theme', 'opm_theme_setup' );
 /* ---------------------------------------------------------
    Core styles & scripts (loaded on every page)
 --------------------------------------------------------- */
+function opm_asset_ver( $file ) {
+	$path = get_template_directory() . '/' . $file;
+	return file_exists( $path ) ? (string) filemtime( $path ) : wp_get_theme()->get( 'Version' );
+}
+
 function opm_enqueue_core_assets() {
 	// Google Fonts + Font Awesome (as used across the original site)
 	wp_enqueue_style( 'opm-fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css', array(), '6.5.0' );
 
 	// Main global stylesheet (this IS the theme stylesheet, so use get_stylesheet_uri)
-	wp_enqueue_style( 'opm-style', get_stylesheet_uri(), array( 'opm-fontawesome' ), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'opm-style', get_stylesheet_uri(), array( 'opm-fontawesome' ), opm_asset_ver( 'style.css' ) );
 
 	// Global site behaviour (mobile nav, cursor, scroll progress, counters, reveal animations)
-	wp_enqueue_script( 'opm-main', get_template_directory_uri() . '/main.js', array(), '1.0', true );
+	wp_enqueue_script( 'opm-main', get_template_directory_uri() . '/main.js', array(), opm_asset_ver( 'main.js' ), true );
 }
 add_action( 'wp_enqueue_scripts', 'opm_enqueue_core_assets' );
 
@@ -47,10 +52,10 @@ function opm_enqueue_page_assets( $slug ) {
 		$css = get_template_directory() . '/' . $slug . '.css';
 		$js  = get_template_directory() . '/' . $slug . '.js';
 		if ( file_exists( $css ) ) {
-			wp_enqueue_style( 'opm-' . $slug, get_template_directory_uri() . '/' . $slug . '.css', array( 'opm-style' ), '1.0' );
+			wp_enqueue_style( 'opm-' . $slug, get_template_directory_uri() . '/' . $slug . '.css', array( 'opm-style' ), opm_asset_ver( $slug . '.css' ) );
 		}
 		if ( file_exists( $js ) ) {
-			wp_enqueue_script( 'opm-' . $slug . '-js', get_template_directory_uri() . '/' . $slug . '.js', array(), '1.0', true );
+			wp_enqueue_script( 'opm-' . $slug . '-js', get_template_directory_uri() . '/' . $slug . '.js', array(), opm_asset_ver( $slug . '.js' ), true );
 		}
 	} );
 }
@@ -60,12 +65,12 @@ function opm_enqueue_page_assets( $slug ) {
 --------------------------------------------------------- */
 function opm_enqueue_blog_assets() {
 	if ( is_singular( 'post' ) ) {
-		wp_enqueue_style( 'opm-blog-post', get_template_directory_uri() . '/blog-post.css', array( 'opm-style' ), '1.0' );
-		wp_enqueue_script( 'opm-blog-post-js', get_template_directory_uri() . '/blog-post.js', array(), '1.0', true );
+		wp_enqueue_style( 'opm-blog-post', get_template_directory_uri() . '/blog-post.css', array( 'opm-style' ), opm_asset_ver( 'blog-post.css' ) );
+		wp_enqueue_script( 'opm-blog-post-js', get_template_directory_uri() . '/blog-post.js', array(), opm_asset_ver( 'blog-post.js' ), true );
 	}
 	if ( is_page_template( 'page-blog.php' ) || is_home() ) {
-		wp_enqueue_style( 'opm-blog', get_template_directory_uri() . '/blog.css', array( 'opm-style' ), '1.0' );
-		wp_enqueue_script( 'opm-blog-js', get_template_directory_uri() . '/blog.js', array(), '1.0', true );
+		wp_enqueue_style( 'opm-blog', get_template_directory_uri() . '/blog.css', array( 'opm-style' ), opm_asset_ver( 'blog.css' ) );
+		wp_enqueue_script( 'opm-blog-js', get_template_directory_uri() . '/blog.js', array(), opm_asset_ver( 'blog.js' ), true );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'opm_enqueue_blog_assets' );
