@@ -237,12 +237,12 @@ get_header();
           <span class="tag" style="margin-bottom:0;">Content Creation</span>
           <span class="tag" style="margin-bottom:0;">Graphic Design</span>
         </div>
-        <p style="color:var(--text-secondary);font-size:.93rem;line-height:1.85;margin-bottom:2rem;">Online Pro Max is a dynamic international marketing and software solutions company headquartered at the prestigious Meydan Grandstand, with branches serving clients worldwide. We help businesses of all sizes — from startups to established brands — grow their presence, generate quality leads, and build software products that perform. Our integrated team of marketers, developers, designers, and content creators work as one to deliver results that exceed expectations.</p>
+        <p style="color:var(--text-secondary);font-size:.93rem;line-height:1.85;margin-bottom:2rem;">Online Pro Max is a dynamic international marketing and software solutions company headquartered at Churchill Tower in Business Bay, with branches serving clients worldwide. We help businesses of all sizes — from startups to established brands — grow their presence, generate quality leads, and build software products that perform. Our integrated team of marketers, developers, designers, and content creators work as one to deliver results that exceed expectations.</p>
         <div class="about-feature">
           <div class="about-feature-icon">&#127760;</div>
           <div>
             <div class="about-feature-title">UAE-Based, Globally Minded</div>
-            <div class="about-feature-desc">Operating from Dubai's iconic Meydan Grandstand, serving clients across the UAE, GCC, and internationally.</div>
+            <div class="about-feature-desc">Operating from Churchill Tower in Dubai's Business Bay, serving clients across the UAE, GCC, and internationally.</div>
           </div>
         </div>
         <div class="about-feature">

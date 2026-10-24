@@ -266,6 +266,88 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .pf-card.hidden{display:none}
 
 /* ═══════════════════════════════════════════════════════
+   HERO — personal intro, portrait + own projects
+═══════════════════════════════════════════════════════ */
+.pf-hero--intro{flex-direction:column;align-items:stretch;justify-content:flex-end;min-height:auto}
+.pf-intro{position:relative;z-index:2;width:100%;max-width:1340px;margin:0 auto;padding:7rem 2rem 3rem;display:grid;grid-template-columns:1.15fr .85fr;gap:4rem;align-items:center}
+.pf-intro-title{font-size:clamp(2.8rem,5.6vw,4.9rem);margin-bottom:1rem}
+.pf-intro-role{font-family:var(--font-mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#fff;opacity:0;animation:fade-up .8s .45s ease forwards;margin-bottom:1.2rem;display:inline-block;padding:.4rem .9rem;border:1px solid rgba(61,184,232,.35);border-radius:50px;background:rgba(61,184,232,.1)}
+.pf-hero--intro .pf-hero-desc{max-width:540px;margin-bottom:1.6rem}
+.pf-hero--intro .pf-hero-desc strong{color:#fff;font-weight:700}
+.pf-skills{display:flex;flex-wrap:wrap;gap:.55rem;margin-bottom:2.2rem;opacity:0;animation:fade-up .8s .62s ease forwards}
+.pf-skill{display:inline-flex;align-items:center;gap:.5rem;font-size:.82rem;font-weight:600;color:#fff;padding:.5rem .95rem;border-radius:50px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(8px)}
+.pf-skill i{color:var(--blue-light);font-size:.8rem}
+
+/* Portrait */
+.pf-portrait{position:relative;justify-self:center;width:min(100%,420px);aspect-ratio:4/5;opacity:0;animation:pf-portrait-in 1.1s .3s cubic-bezier(.23,1,.32,1) forwards}
+@keyframes pf-portrait-in{from{opacity:0;transform:translateY(30px) scale(.96)}to{opacity:1;transform:none}}
+.pf-portrait-ring{position:absolute;inset:-14px;border-radius:220px 220px 32px 32px;background:conic-gradient(from 200deg,var(--blue-light),transparent 30%,rgba(147,197,253,.6) 55%,transparent 75%,var(--blue));filter:blur(.5px);opacity:.85;animation:pf-ring-spin 14s linear infinite}
+@keyframes pf-ring-spin{to{filter:blur(.5px) hue-rotate(40deg)}}
+.pf-portrait::before{content:'';position:absolute;inset:8% -12% -6%;background:radial-gradient(circle at 50% 40%,rgba(61,184,232,.38),transparent 65%);filter:blur(30px);z-index:-1}
+.pf-portrait-frame{position:absolute;inset:0;border-radius:210px 210px 26px 26px;overflow:hidden;border:4px solid rgba(255,255,255,.9);box-shadow:0 30px 80px rgba(3,10,35,.55);background:linear-gradient(160deg,#1e388a,#0b1840)}
+.pf-portrait-img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.pf-portrait-badge{position:absolute;display:flex;align-items:center;gap:.75rem;background:#fff;border-radius:18px;box-shadow:0 18px 50px rgba(3,10,35,.35);padding:.85rem 1.1rem;color:var(--navy-deep);animation:pf-float 5s ease-in-out infinite}
+@keyframes pf-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.pf-portrait-badge--xp{left:-2.4rem;bottom:14%;padding:1rem 1.25rem}
+.pf-portrait-badge-num{font-family:var(--font-display);font-size:2.9rem;font-weight:900;line-height:1;background:linear-gradient(135deg,var(--navy-mid),var(--blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.pf-portrait-badge-label{font-family:var(--font-mono);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-dim);line-height:1.45}
+.pf-portrait-badge--brands{right:-1.6rem;top:12%;font-size:.82rem;animation-delay:-2.5s}
+.pf-portrait-badge--brands i{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--blue-ultra);color:var(--blue)}
+
+/* Own projects strip */
+.pf-own{position:relative;z-index:2;width:100%;max-width:1340px;margin:0 auto;padding:0 2rem 9rem;opacity:0;animation:fade-up .9s .9s ease forwards}
+.pf-own-head{display:flex;align-items:center;gap:1rem;margin-bottom:1.1rem;flex-wrap:wrap}
+.pf-own-tag{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--font-mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:#0b1840;background:linear-gradient(135deg,#ffd978,#f5b83d);padding:.38rem .85rem;border-radius:50px;font-weight:700}
+.pf-own-sub{font-size:.84rem;color:rgba(210,232,255,.65)}
+.pf-own-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;max-width:980px}
+.pf-own-card{min-width:0;display:flex;flex-direction:column;gap:.3rem;padding:.7rem .7rem 1rem;border-radius:var(--radius-md);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(10px);transition:var(--transition)}
+.pf-own-card:hover{background:rgba(255,255,255,.13);border-color:rgba(61,184,232,.5);transform:translateY(-5px)}
+.pf-own-img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;border-radius:10px;margin-bottom:.55rem;background:#0b1840}
+.pf-own-img--blank{display:flex;align-items:center;justify-content:center;gap:.6rem;font-family:var(--font-display);font-size:1.25rem;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--navy-mid),var(--blue))}
+.pf-own-name{font-weight:700;font-size:.95rem;color:#fff;padding:0 .3rem}
+.pf-own-url{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.06em;color:var(--blue-light);padding:0 .3rem;display:flex;align-items:center;gap:.4rem;overflow-wrap:anywhere}
+.pf-own-img--blank{font-size:clamp(.95rem,2.4vw,1.25rem);text-align:center;padding:0 .5rem}
+.pf-own-url i{font-size:.6rem}
+
+/* ═══════════════════════════════════════════════════════
+   CLIENT GROUPS — media production logos + website cards
+═══════════════════════════════════════════════════════ */
+.pf-group{margin-bottom:4.5rem}
+.pf-group:last-of-type{margin-bottom:0}
+.pf-group.hidden{display:none}
+.pf-group-head{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem 3rem;flex-wrap:wrap;margin-bottom:1.8rem}
+.pf-group-eyebrow{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);margin-bottom:.45rem}
+.pf-group-title{font-family:var(--font-display);font-size:clamp(1.8rem,3.4vw,2.5rem);font-weight:700;color:var(--navy-deep);line-height:1.1}
+.pf-group-desc{font-size:.92rem;color:var(--text-dim);max-width:440px;line-height:1.7}
+
+.pf-logo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:1rem}
+.pf-card.pf-logo-card{padding:1rem 1rem 1.15rem;align-items:center;text-align:center;gap:.55rem;border-radius:var(--radius-md)}
+.pf-logo-img{width:100%;aspect-ratio:1/1;object-fit:contain;border-radius:10px;background:var(--bg-2);transition:transform .5s ease}
+.pf-logo-card:hover .pf-logo-img{transform:scale(1.04)}
+.pf-logo-name{font-weight:600;font-size:.9rem;color:var(--navy-deep);line-height:1.3;margin-top:.2rem}
+.pf-logo-link{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);display:inline-flex;align-items:center;gap:.35rem}
+.pf-logo-link--muted{color:var(--text-dim)}
+
+.pf-web-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.pf-web-card .pf-card-img{height:280px;object-position:top}
+
+/* ═══════════════════════════════════════════════════════
+   CONTACT DETAILS
+═══════════════════════════════════════════════════════ */
+#pf-contact{padding:5.5rem 0 0;background:var(--bg-2)}
+.pf-contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.pf-contact-card{background:#fff;border:1px solid var(--border-light);border-radius:var(--radius-lg);padding:1.6rem 1.5rem;display:flex;flex-direction:column;gap:.35rem;transition:var(--transition);box-shadow:0 2px 14px rgba(14,26,58,.05)}
+a.pf-contact-card:hover{border-color:var(--border-mid);transform:translateY(-4px);box-shadow:0 16px 44px rgba(14,26,58,.12)}
+.pf-contact-icon{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--blue-ultra);color:var(--blue);font-size:1rem;margin-bottom:.6rem}
+.pf-contact-icon--wa{background:rgba(37,211,102,.12);color:#1da851}
+.pf-contact-label{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text-dim)}
+.pf-contact-value{font-size:.95rem;font-weight:600;color:var(--navy-deep);line-height:1.5;overflow-wrap:anywhere}
+.pf-contact-socials{display:flex;align-items:center;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
+.pf-contact-socials .pf-contact-label{margin-right:.4rem}
+.pf-contact-socials a{width:38px;height:38px;border-radius:50%;border:1px solid var(--border-mid);background:#fff;display:flex;align-items:center;justify-content:center;color:var(--blue);font-size:.85rem;transition:var(--transition)}
+.pf-contact-socials a:hover{background:var(--blue);color:#fff;border-color:var(--blue);transform:translateY(-2px)}
+
+/* ═══════════════════════════════════════════════════════
    CTA BANNER — dark navy (same as all other pages)
 ═══════════════════════════════════════════════════════ */
 #pf-cta{padding:6rem 0;background:var(--bg-2)}
@@ -322,6 +404,9 @@ footer{background:#1b2a5e;border-top:1px solid rgba(61,184,232,.14);padding:5rem
   .pf-hero-right{grid-template-columns:repeat(2,1fr)}
   .pf-card--xl,.pf-card--md,.pf-card--lg,.pf-card--sm,.pf-card--third{grid-column:span 6}
   .pf-card--wide{grid-column:span 12}
+  .pf-web-grid,.pf-contact-grid{grid-template-columns:repeat(2,1fr)}
+  .pf-intro{grid-template-columns:1fr;gap:3.5rem;padding-top:4.5rem}
+  .pf-portrait{order:-1;width:min(78%,340px)}
 }
 @media(max-width:768px){
   .nav-menu{display:none}.hamburger{display:flex}.top-bar{display:none}
@@ -342,4 +427,13 @@ footer{background:#1b2a5e;border-top:1px solid rgba(61,184,232,.14);padding:5rem
   .pf-filter-btn{font-size:.74rem;padding:.44rem .9rem}
   .pf-hero-right{grid-template-columns:1fr 1fr}
   .pf-stat-card.wide{flex-direction:column;text-align:center;gap:.6rem}
+  .pf-logo-grid{grid-template-columns:repeat(2,1fr);gap:.7rem}
+  .pf-intro{padding:3.5rem 1.25rem 2.5rem}
+  .pf-own{padding:0 1.25rem 7rem}
+  .pf-own-grid{grid-template-columns:1fr;gap:.8rem}
+  .pf-portrait-badge--xp{left:-1rem;padding:.75rem .95rem}
+  .pf-portrait-badge-num{font-size:2.2rem}
+  .pf-portrait-badge--brands{right:-.8rem}
+  .pf-web-grid,.pf-contact-grid{grid-template-columns:1fr}
+  .pf-web-card .pf-card-img{height:230px}
 }

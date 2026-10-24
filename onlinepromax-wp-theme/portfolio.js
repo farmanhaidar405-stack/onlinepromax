@@ -130,6 +130,9 @@ document.addEventListener('DOMContentLoaded', function () {
         card.classList.add('hidden');
       }
     });
+    document.querySelectorAll('.pf-group').forEach(function (g) {
+      g.classList.toggle('hidden', !g.querySelector('.pf-card[data-cat]:not(.hidden)'));
+    });
     if (countEl) countEl.textContent = visible + ' project' + (visible !== 1 ? 's' : '');
     if (emptyEl) emptyEl.classList.toggle('show', visible === 0);
   }

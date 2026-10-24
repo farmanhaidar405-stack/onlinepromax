@@ -1,68 +1,84 @@
 <?php
 /**
  * Template Name: Portfolio
- * Description: Auto-converted from portfolio.html
+ * Description: Personal intro, own projects, and client portfolio (media production + websites).
  */
 opm_enqueue_page_assets( 'portfolio' );
 get_header();
 ?>
 
-
-
-<!-- ══ HERO ════════════════════════════════════════════════════ -->
-<section class="pf-hero">
-  <div class="pf-hero-bg">
-    <div class="pf-hero-bg-left"></div>
-    <div class="pf-hero-bg-right"></div>
-  </div>
+<!-- ══ HERO — personal intro ══════════════════════════════════ -->
+<section class="pf-hero pf-hero--intro">
   <div class="pf-hero-mesh"></div>
   <div class="pf-hero-grid"></div>
   <div class="pf-hero-slant"></div>
 
-  <div class="pf-hero-inner">
-    <!-- Left: headline -->
-    <div class="pf-hero-left">
+  <div class="pf-intro">
+    <!-- Left: intro -->
+    <div class="pf-intro-text">
       <div class="pf-hero-eyebrow">
         <div class="pf-hero-eyebrow-line"></div>
-        <span>Our Work · Dubai, UAE</span>
+        <span>Portfolio · Dubai, UAE</span>
       </div>
-      <h1 class="pf-hero-title">
-        <span class="line"><span class="word">Work That</span></span>
-        <span class="line"><span class="word w2 accent">Speaks</span></span>
+      <h1 class="pf-hero-title pf-intro-title">
+        <span class="line"><span class="word">Hi, I'm</span></span>
+        <span class="line"><span class="word w2 accent">Farman Haidar</span></span>
       </h1>
+      <p class="pf-intro-role">Digital Marketing Strategist &amp; ERP Consultant</p>
       <p class="pf-hero-desc">
-        From scroll-stopping social campaigns and high-converting Google Ads to award-worthy brand identities and world-class digital products — explore what Online Pro Max delivers for clients across the UAE and beyond.
+        For the past <strong>6 years</strong> I've helped brands across the UAE grow — from property developers and restaurants to retailers, clinics, schools and government entities. Below is the work I'm proud of.
       </p>
+      <div class="pf-skills">
+        <span class="pf-skill"><i class="fa-solid fa-chart-line"></i> Digital Marketing</span>
+        <span class="pf-skill"><i class="fa-solid fa-diagram-project"></i> ERP Consultation</span>
+        <span class="pf-skill"><i class="fa-solid fa-clapperboard"></i> Content Creation</span>
+        <span class="pf-skill"><i class="fa-solid fa-pen-ruler"></i> Graphic Design</span>
+      </div>
       <div class="pf-hero-btns">
         <a href="#pf-grid" class="btn btn-blue"><i class="fa-solid fa-eye"></i> Browse Projects</a>
-        <a href="/request-quote/" class="btn-ghost-light"><i class="fa-solid fa-paper-plane"></i> Start a Project</a>
+        <a href="#pf-contact" class="btn-ghost-light"><i class="fa-solid fa-paper-plane"></i> Work With Me</a>
       </div>
     </div>
-    <!-- Right: stat cards -->
-    <div class="pf-hero-right">
-      <div class="pf-stat-card">
-        <div class="pf-stat-num" data-counter="50">0</div>+
-        <div class="pf-stat-label">Projects Delivered</div>
+
+    <!-- Right: portrait -->
+    <div class="pf-portrait">
+      <div class="pf-portrait-ring"></div>
+      <div class="pf-portrait-frame">
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/profile.jpg" alt="Farman Haidar" class="pf-portrait-img" />
       </div>
-      <div class="pf-stat-card">
-        <div class="pf-stat-num" data-counter="30">0</div>+
-        <div class="pf-stat-label">Happy Clients</div>
+      <div class="pf-portrait-badge pf-portrait-badge--xp">
+        <span class="pf-portrait-badge-num"><span data-counter="6">0</span>+</span>
+        <span class="pf-portrait-badge-label">Years of<br/>Experience</span>
       </div>
-      <div class="pf-stat-card">
-        <div class="pf-stat-num" data-counter="4">0</div>
-        <div class="pf-stat-label">Service Categories</div>
+      <div class="pf-portrait-badge pf-portrait-badge--brands">
+        <i class="fa-solid fa-briefcase"></i>
+        <span><strong><span data-counter="60">0</span>+</strong> brands served</span>
       </div>
-      <div class="pf-stat-card">
-        <div class="pf-stat-num" data-counter="12">0</div>+
-        <div class="pf-stat-label">Countries Reached</div>
-      </div>
-      <div class="pf-stat-card wide">
-        <div class="pf-stat-icon"><i class="fa-solid fa-trophy"></i></div>
-        <div>
-          <div class="pf-stat-num" style="font-size:1.6rem;">100%</div>
-          <div class="pf-stat-label">Client Satisfaction Rate</div>
-        </div>
-      </div>
+    </div>
+  </div>
+
+  <!-- Personal projects -->
+  <div class="pf-own">
+    <div class="pf-own-head">
+      <span class="pf-own-tag"><i class="fa-solid fa-star"></i> My Own Projects</span>
+      <span class="pf-own-sub">Brands I founded and run</span>
+    </div>
+    <div class="pf-own-grid">
+      <a href="https://nexttrends.online/" target="_blank" rel="noopener" class="pf-own-card">
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/portfolio/nexttrends.jpg" alt="Next Trends online store" class="pf-own-img" loading="lazy" />
+        <span class="pf-own-name">Next Trends</span>
+        <span class="pf-own-url">nexttrends.online <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+      </a>
+      <a href="https://nexttrendstrading.com/" target="_blank" rel="noopener" class="pf-own-card">
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/portfolio/nexttrendstrading.jpg" alt="Next Trends Trading markets dashboard" class="pf-own-img" loading="lazy" />
+        <span class="pf-own-name">Next Trends Trading</span>
+        <span class="pf-own-url">nexttrendstrading.com <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+      </a>
+      <a href="https://itsinvestora.com/" target="_blank" rel="noopener" class="pf-own-card">
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/portfolio/itsinvestora.jpg" alt="Investora UAE property advisory" class="pf-own-img" loading="lazy" />
+        <span class="pf-own-name">Investora</span>
+        <span class="pf-own-url">itsinvestora.com <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+      </a>
     </div>
   </div>
 </section>
@@ -84,476 +100,551 @@ get_header();
         <button class="pf-filter-btn active" data-filter="all">
           <i class="fa-solid fa-border-all"></i> All Work
         </button>
-        <button class="pf-filter-btn" data-filter="mkt">
-          <i class="fa-solid fa-chart-line"></i> Digital Marketing
+        <button class="pf-filter-btn" data-filter="media">
+          <i class="fa-solid fa-clapperboard"></i> Media Production
         </button>
         <button class="pf-filter-btn" data-filter="web">
-          <i class="fa-solid fa-laptop-code"></i> Web &amp; App Dev
-        </button>
-        <button class="pf-filter-btn" data-filter="cnt">
-          <i class="fa-solid fa-clapperboard"></i> Content Creation
-        </button>
-        <button class="pf-filter-btn" data-filter="dsn">
-          <i class="fa-solid fa-pen-ruler"></i> Graphic Design
+          <i class="fa-solid fa-laptop-code"></i> Website Development
         </button>
       </div>
-      <div class="pf-result-count" id="pf-count">18 projects</div>
+      <div class="pf-result-count" id="pf-count">69 projects</div>
     </div>
   </div>
 </div>
 
-<!-- ══ PORTFOLIO BENTO GRID ═══════════════════════════════════ -->
+<!-- ══ PORTFOLIO ══════════════════════════════════════════════ -->
 <section class="pf-grid-section" id="pf-grid">
   <div class="container">
-    <div class="pf-grid">
 
-      <!-- ── ROW 1: XL + MD ── -->
-
-      <!-- 1. Meta Ads Campaign — XL -->
-      <div class="pf-card pf-card--xl" data-cat="mkt">
-        <div class="pf-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1665799871677-f1fd17338b43?q=80&w=814&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Meta Ads Campaign" class="pf-card-img" />
-          <div class="pf-card-overlay">
-            <span class="pf-card-cat pf-card-cat--mkt">Digital Marketing</span>
-            <h3 class="pf-card-title">Meta & Instagram Ads Campaign</h3>
-            <div class="pf-card-sub">E-Commerce Brand · UAE</div>
-            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="pf-card-hover-info">
-            <h3 class="pf-card-hover-title">Meta & Instagram Ads Campaign</h3>
-            <p class="pf-card-hover-desc">Full-funnel Meta campaign for a UAE e-commerce brand. Awareness to conversion across Facebook &amp; Instagram with custom audiences, retargeting, and lookalike segments. Achieved 3.8× ROAS in 60 days.</p>
-            <div class="pf-card-hover-tags">
-              <span class="pf-card-hover-tag">Meta Ads</span>
-              <span class="pf-card-hover-tag">Retargeting</span>
-              <span class="pf-card-hover-tag">ROAS 3.8×</span>
-              <span class="pf-card-hover-tag">E-Commerce</span>
-            </div>
-            <a href="request-quote.html?service=meta-ads" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Get Similar Results</a>
-          </div>
+    <!-- Media Production -->
+    <div class="pf-group" id="media-production">
+      <div class="pf-group-head">
+        <div>
+          <div class="pf-group-eyebrow">Photo · Video · Reels</div>
+          <h2 class="pf-group-title">Media Production</h2>
         </div>
+        <p class="pf-group-desc">Property shoots, brand films, food &amp; product photography and social video for 51 brands. Click any brand to see the work.</p>
       </div>
-
-      <!-- 2. Logo & Brand Identity — MD -->
-      <div class="pf-card pf-card--md" data-cat="dsn">
-        <div class="pf-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1713616147761-c126f8009c6f?q=80&w=996&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Logo Design" class="pf-card-img" />
-          <div class="pf-card-overlay">
-            <span class="pf-card-cat pf-card-cat--dsn">Graphic Design</span>
-            <h3 class="pf-card-title">Logo Design &amp; Brand Identity</h3>
-            <div class="pf-card-sub">F&amp;B Startup · Dubai</div>
-            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="pf-card-hover-info">
-            <h3 class="pf-card-hover-title">Logo Design &amp; Brand Identity</h3>
-            <p class="pf-card-hover-desc">Complete brand identity package for a new Dubai F&amp;B concept — logo, colour palette, typography, brand guidelines, packaging design, and all social media templates.</p>
-            <div class="pf-card-hover-tags">
-              <span class="pf-card-hover-tag">Logo Design</span>
-              <span class="pf-card-hover-tag">Brand Identity</span>
-              <span class="pf-card-hover-tag">Packaging</span>
-            </div>
-            <a href="request-quote.html?service=logo-design" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Start Your Brand</a>
-          </div>
+      <div class="pf-logo-grid">
+        <a href="https://drive.google.com/drive/folders/1awddCWRP6oC_Qm0dV0ia3DyYIFqLZczg" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-08.jpg" alt="Elyan Properties logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Elyan Properties</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1Xzfpk3xMW6X0Q2uxTm-nU_VcfXmR18qE" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Al_samha_logo_HD-01.avif" alt="Adhwa Alsamha logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Adhwa Alsamha</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1s4zg6k1Nl2EczzVRVBQNjqyQUjNNeLoI" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-03.jpg" alt="Amer Al Marwa logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Amer Al Marwa</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1fMHAeIWcfX7POPRS8SuRIKAqIi4U9Dy4" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-18.jpg" alt="Geo Wash logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Geo Wash</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://www.youtube.com/playlist?list=PLVIZEC6x_BqWQK1rdnrQV5W3w6ZoPkFA5" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/07/Untitled-design-11.png" alt="Gravity Homes logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Gravity Homes</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-youtube"></i> Watch Videos</span>
+        </a>
+        <a href="https://www.youtube.com/playlist?list=PLVIZEC6x_BqVsWqpWr4hUigcNK26sqizd" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/07/b.png" alt="Bradley Real Estate logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Bradley Real Estate</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-youtube"></i> Watch Videos</span>
+        </a>
+        <a href="https://www.youtube.com/playlist?list=PLVIZEC6x_BqVs1SAAjtMkWwsB7BFUNpiR" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/07/Kayplus.png" alt="Kayplus Real Estate logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Kayplus Real Estate</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-youtube"></i> Watch Videos</span>
+        </a>
+        <a href="https://www.youtube.com/playlist?list=PLVIZEC6x_BqVqlklxOj8G_4-QlMNm0yPF" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/07/Untitled-1.png" alt="MK Properties logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">MK Properties</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-youtube"></i> Watch Videos</span>
+        </a>
+        <a href="https://www.youtube.com/playlist?list=PLVIZEC6x_BqUf-0MyeuRF3Sn1aY0D-vyf" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/07/Horizon-Logo-2-1.png" alt="Horizon Hills logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Horizon Hills</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-youtube"></i> Watch Videos</span>
+        </a>
+        <a href="https://www.youtube.com/playlist?list=PLVIZEC6x_BqWCQcsNa5iG0-dO9J99_mCv" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/07/Dar-Alfanar-1.png" alt="Dar Alfanar logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Dar Alfanar</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-youtube"></i> Watch Videos</span>
+        </a>
+        <div class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/07/Untitled-design-12.png" alt="Massaed Elevators logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Massaed Elevators</span>
+          <span class="pf-logo-link pf-logo-link--muted"><i class="fa-solid fa-clapperboard"></i> Media Production</span>
         </div>
+        <a href="https://www.youtube.com/playlist?list=PLVIZEC6x_BqVqlklxOj8G_4-QlMNm0yPF" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/07/Untitled-design-13.png" alt="Soft Water UAE logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Soft Water UAE</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-youtube"></i> Watch Videos</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1TuuDZ1IEfMVTzjOvBd9Wsb8ekZNfJ4j_" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/486067221_645047624834513_5265125477985631112_n.jpg" alt="Passion Box logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Passion Box</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1hEKc3hpvNl5xbnMB79o1BfiZuQo1CpNe" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-17.jpg" alt="Sama Al Tamaya logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Sama Al Tamaya</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1YJqrw6_kUe8BFMVzt_XrmGswqXt2X9ay" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Jaxtox-Real-Estate-logo-1.svg" alt="Jaxtox Group logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Jaxtox Group</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1mx4wT_Zr4bbzhRE2UG92vnqk7g6YVhM4" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-07.jpg" alt="Gillan Real Estate logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Gillan Real Estate</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1S-nEUazFmcop9vrTNIDldExDRWniPXVX" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-13.jpg" alt="Stone House Real Estate logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Stone House Real Estate</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1bPEs7DclyhtqQTIahSI59iywbIFsadVV" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-16.jpg" alt="Maj Properties logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Maj Properties</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1ahfNVM4ZwDp0OqH0_bRd931Cnv33sAcn" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-15.jpg" alt="Deva Luxury Properties logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Deva Luxury Properties</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1R5VTqBgIq71uqOTreYm3m6KdopKV0rz0" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-14.jpg" alt="New Era Homes logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">New Era Homes</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1Z190sCtmxUx5CNWu-q1DnD0xDuHys96L" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-09.jpg" alt="Tia Real Estate logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Tia Real Estate</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1IAHwpjI_Y-JgobxaPusC8XCnoTf2cbsx" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-10.jpg" alt="Zero Commission logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Zero Commission</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1rXeWAQQRp2skNkscCXUmnJBd0-iBq7dw" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-06.jpg" alt="Azizi Developments logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Azizi Developments</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1IAHwpjI_Y-JgobxaPusC8XCnoTf2cbsx" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-05.jpg" alt="Reportage Properties logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Reportage Properties</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1E_630-0C748UwsL9R7ja5uxAitG0R8HB" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-19.jpg" alt="Crunchyee Restaurant logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Crunchyee Restaurant</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1MPHJsFc5oLuUk_Nf_QeXHCWdLgcVmngI" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-20.jpg" alt="Elgato Restaurant logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Elgato Restaurant</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1cm9pWcESly90eKst3lAJLjoakcXwqi94" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-21.jpg" alt="Riceplus Restaurant logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Riceplus Restaurant</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1HewLuYZ7GOnuDdxIpe2aFkXaP7QVKV9p" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-22.jpg" alt="Beirut Fashion logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Beirut Fashion</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1SBhZScVWqmROAFnC_0pkA474J_kRbyL-" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-23.jpg" alt="Zamzam Water logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Zamzam Water</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1QhDy8-pn-XHQIJHdUOL0JLeYR6wb_GwH" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-25.jpg" alt="Aura Hom logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Aura Hom</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1nAoRlLN4bZ93Wn9h2ZVcfz1_nS4yTnXu" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-26.jpg" alt="La Framboise logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">La Framboise</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1mlDQWS-rSRFHn54Y0nvi1HQ5jyBpOrYc" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-27.jpg" alt="Fountain Blue logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Fountain Blue</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1Qi02CphYoSzKNTqAareP0AFM6lLo0KWa" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-28.jpg" alt="Quality Care Dental Center logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Quality Care Dental Center</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1hqVjJCNM-CFOe3epY7Y95W3gAKfpP2Wp" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-29.jpg" alt="Urban Rose logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Urban Rose</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/12g3Exfy14qU4iPLpBSPz9Mp30iRCZBC2" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-30.jpg" alt="Omis Cosmetics logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Omis Cosmetics</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1A42HSYS2TMQo387c5CC6prI6wpDL8lIY" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-31.jpg" alt="Alsafeer Car Rental logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Alsafeer Car Rental</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1gxii9IPoDRlTc7C0iqQyPfYQTlTOvew7" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-33.jpg" alt="Kit 51 logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Kit 51</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1JmvRu3KDuvUkIBXkdWsixbV5x7miN2sk" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-34.jpg" alt="Auto Level Portal logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Auto Level Portal</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/18RusyUq9fp9hGQlsA9vyklvaKKT5d4wC" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-37.jpg" alt="Uptown Fitness logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Uptown Fitness</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1bZ4uAODZVWAEQbyiJQa9KqK0LMdfixT9" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-38.jpg" alt="Layaqa Mobile App logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Layaqa Mobile App</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1eeRx1Xs2D_N1NDGWAbcAVPPU6a2YiYbw" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-39.jpg" alt="Oud Store logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Oud Store</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1lFA8K04L_VjJCXUKVE2KCQo4O0sLNphp" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/447812387_977218437051402_8383119214313156164_n.jpg" alt="Marrsile Perfumes logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Marrsile Perfumes</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1hjrX0eO-Xj-tE0eJz323eNuKuhqd1fjv" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-41.jpg" alt="Laden Store logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Laden Store</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1UDc13cnUkLnseve1SVR7VSwCA2Cy_HLb" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-02.jpg" alt="Dubai Municipality logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Dubai Municipality</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1ahWvuPZV7E1gw0qiBITGEBGkjW5nPri1" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-43.jpg" alt="Lapa Eatery logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Lapa Eatery</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/16QN7K8quoB5XvX57KH6oOBcEVClaBmGk" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-46.jpg" alt="Think Techie logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Think Techie</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1fBTSn1VfKWuY18NN-9IPcFvOZY3Qfo9v" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Mystery-Shopper-Profile-OPTION-1-IT_high-47.jpg" alt="Gulf Model School Dubai logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Gulf Model School Dubai</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1ehC-cvU4VoRyE6zpTf1FKmnejnI5gz-q" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Untitled-4-02.png" alt="Lavender Super Mart logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Lavender Super Mart</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1xWUIAzVaNaYZKR2qIxTcbwFVHAqM0DuV" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Untitled-4-03.png" alt="Grasse5 Perfumes logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Grasse5 Perfumes</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1XNumLO6KSkcFOW7vkFcWIhe_612dcUeW" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Untitled-4-04.png" alt="Halawanji Nablus logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Halawanji Nablus</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1K4bMfOxjcDTbOuqGBPyxuNVy89E-XNmU" target="_blank" rel="noopener" class="pf-card pf-logo-card" data-cat="media">
+          <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Untitled-4-08.png" alt="Mamma Mia Pizza &amp; Pasta logo" class="pf-logo-img" loading="lazy" />
+          <span class="pf-logo-name">Mamma Mia Pizza &amp; Pasta</span>
+          <span class="pf-logo-link"><i class="fa-brands fa-google-drive"></i> View Work</span>
+        </a>
       </div>
+    </div>
 
-      <!-- ── ROW 2: MD + MD + MD ── -->
-
-      <!-- 3. Corporate Website — MD -->
-      <div class="pf-card pf-card--md" data-cat="web">
-        <div class="pf-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=700&auto=format&fit=crop&q=80" alt="Web Development" class="pf-card-img" />
-          <div class="pf-card-overlay">
-            <span class="pf-card-cat pf-card-cat--web">Web Development</span>
-            <h3 class="pf-card-title">Corporate Website Redesign</h3>
-            <div class="pf-card-sub">Real Estate Group · UAE</div>
-            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="pf-card-hover-info">
-            <h3 class="pf-card-hover-title">Corporate Website Redesign</h3>
-            <p class="pf-card-hover-desc">Full redesign and rebuild of a UAE real estate group's corporate site. Mobile-first, SEO-optimised, with interactive property listings, lead capture, and CRM integration. Organic traffic up 215%.</p>
-            <div class="pf-card-hover-tags">
-              <span class="pf-card-hover-tag">Web Dev</span>
-              <span class="pf-card-hover-tag">UI/UX</span>
-              <span class="pf-card-hover-tag">SEO</span>
-              <span class="pf-card-hover-tag">CRM</span>
-            </div>
-            <a href="request-quote.html?service=web-dev" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Build Your Site</a>
-          </div>
+    <!-- Website Development -->
+    <div class="pf-group" id="website-development">
+      <div class="pf-group-head">
+        <div>
+          <div class="pf-group-eyebrow">Design · Build · Launch</div>
+          <h2 class="pf-group-title">Website Development</h2>
         </div>
+        <p class="pf-group-desc">Live websites we designed and built. Click any project to visit the site.</p>
       </div>
-
-      <!-- 4. CGI Product Video — MD -->
-      <div class="pf-card pf-card--md" data-cat="cnt">
-        <div class="pf-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=700&auto=format&fit=crop&q=80" alt="CGI Content" class="pf-card-img" />
-          <div class="pf-card-overlay">
-            <span class="pf-card-cat pf-card-cat--cnt">Content Creation</span>
-            <h3 class="pf-card-title">CGI Product Launch Video</h3>
-            <div class="pf-card-sub">Luxury Brand · GCC</div>
-            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="pf-card-hover-info">
-            <h3 class="pf-card-hover-title">CGI Product Launch Video</h3>
-            <p class="pf-card-hover-desc">Photorealistic CGI production for a luxury GCC brand's product launch. 30-second hero video and 6 social cut-downs — generated 2.4M impressions in the first week on Instagram and TikTok.</p>
-            <div class="pf-card-hover-tags">
-              <span class="pf-card-hover-tag">CGI</span>
-              <span class="pf-card-hover-tag">Product Video</span>
-              <span class="pf-card-hover-tag">Social Media</span>
+      <div class="pf-web-grid">
+        <a href="https://adhwaalsamha.com/" target="_blank" rel="noopener" class="pf-card pf-web-card" data-cat="web">
+          <div class="pf-card-img-wrap">
+            <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/adh.jpg" alt="Adhwa Alsamha website" class="pf-card-img" loading="lazy" />
+            <span class="pf-card-cat pf-card-cat--web">Website</span>
+            <div class="pf-card-overlay">
+              <h3 class="pf-card-title">Adhwa Alsamha</h3>
+              <div class="pf-card-sub">adhwaalsamha.com</div>
+              <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
-            <a href="request-quote.html?service=cgi" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Create CGI Content</a>
           </div>
-        </div>
-      </div>
-
-      <!-- 5. Google Ads — MD -->
-      <div class="pf-card pf-card--md" data-cat="mkt">
-        <div class="pf-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=700&auto=format&fit=crop&q=80" alt="Google Ads" class="pf-card-img" />
-          <div class="pf-card-overlay">
-            <span class="pf-card-cat pf-card-cat--mkt">Digital Marketing</span>
-            <h3 class="pf-card-title">Google Ads — Lead Generation</h3>
-            <div class="pf-card-sub">Healthcare Clinic · Dubai</div>
-            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="pf-card-hover-info">
-            <h3 class="pf-card-hover-title">Google Ads — Lead Generation</h3>
-            <p class="pf-card-hover-desc">Search &amp; Display PPC campaign for a Dubai healthcare clinic. Keyword strategy, ad copy, landing page optimisation, and call tracking. Reduced cost per lead by 58% within 45 days.</p>
-            <div class="pf-card-hover-tags">
-              <span class="pf-card-hover-tag">Google Ads</span>
-              <span class="pf-card-hover-tag">PPC</span>
-              <span class="pf-card-hover-tag">Lead Gen</span>
-              <span class="pf-card-hover-tag">-58% CPL</span>
+        </a>
+        <a href="https://elyanproperties.com/" target="_blank" rel="noopener" class="pf-card pf-web-card" data-cat="web">
+          <div class="pf-card-img-wrap">
+            <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Elyan.jpg" alt="Elyan Properties website" class="pf-card-img" loading="lazy" />
+            <span class="pf-card-cat pf-card-cat--web">Website</span>
+            <div class="pf-card-overlay">
+              <h3 class="pf-card-title">Elyan Properties</h3>
+              <div class="pf-card-sub">elyanproperties.com</div>
+              <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
-            <a href="request-quote.html?service=google-ads" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Run Google Ads</a>
           </div>
-        </div>
-      </div>
-
-      <!-- ── ROW 3: LG + LG ── -->
-
-      <!-- 6. iOS App — LG -->
-      <div class="pf-card pf-card--lg" data-cat="web">
-        <div class="pf-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1762769198239-fee17b640d39?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="iOS App" class="pf-card-img" />
-          <div class="pf-card-overlay">
-            <span class="pf-card-cat pf-card-cat--web">App Development</span>
-            <h3 class="pf-card-title">iOS Delivery App — Full Build</h3>
-            <div class="pf-card-sub">Logistics Startup · UAE</div>
-            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="pf-card-hover-info">
-            <h3 class="pf-card-hover-title">iOS Delivery App — Full Build</h3>
-            <p class="pf-card-hover-desc">End-to-end iOS application for a UAE logistics startup — real-time tracking, driver assignment, customer dashboard, push notifications, and payment gateway integration. Launched on App Store in 14 weeks.</p>
-            <div class="pf-card-hover-tags">
-              <span class="pf-card-hover-tag">iOS</span>
-              <span class="pf-card-hover-tag">Swift</span>
-              <span class="pf-card-hover-tag">Real-Time</span>
-              <span class="pf-card-hover-tag">Payments</span>
+        </a>
+        <a href="https://cleantouch.ae/" target="_blank" rel="noopener" class="pf-card pf-web-card" data-cat="web">
+          <div class="pf-card-img-wrap">
+            <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/clean.jpg" alt="Clean Touch website" class="pf-card-img" loading="lazy" />
+            <span class="pf-card-cat pf-card-cat--web">Website</span>
+            <div class="pf-card-overlay">
+              <h3 class="pf-card-title">Clean Touch</h3>
+              <div class="pf-card-sub">cleantouch.ae</div>
+              <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
-            <a href="request-quote.html?service=ios-app" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Build Your App</a>
           </div>
-        </div>
-      </div>
-
-      <!-- 7. Social Media Posters — LG -->
-      <div class="pf-card pf-card--lg" data-cat="dsn">
-        <div class="pf-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&auto=format&fit=crop&q=80" alt="Poster Design" class="pf-card-img" />
-          <div class="pf-card-overlay">
-            <span class="pf-card-cat pf-card-cat--dsn">Graphic Design</span>
-            <h3 class="pf-card-title">Social Media Design Suite</h3>
-            <div class="pf-card-sub">Fashion Brand · Dubai</div>
-            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="pf-card-hover-info">
-            <h3 class="pf-card-hover-title">Social Media Design Suite</h3>
-            <p class="pf-card-hover-desc">60-piece social media design suite for a Dubai fashion brand — Instagram posts, stories, reel covers, highlights, and an editable Canva template library. Consistent visual identity across all platforms.</p>
-            <div class="pf-card-hover-tags">
-              <span class="pf-card-hover-tag">Posters</span>
-              <span class="pf-card-hover-tag">Stories</span>
-              <span class="pf-card-hover-tag">Reels</span>
-              <span class="pf-card-hover-tag">Templates</span>
+        </a>
+        <a href="https://luxelinecreation.com/" target="_blank" rel="noopener" class="pf-card pf-web-card" data-cat="web">
+          <div class="pf-card-img-wrap">
+            <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/luxe.jpg" alt="Luxeline Creation website" class="pf-card-img" loading="lazy" />
+            <span class="pf-card-cat pf-card-cat--web">Website</span>
+            <div class="pf-card-overlay">
+              <h3 class="pf-card-title">Luxeline Creation</h3>
+              <div class="pf-card-sub">luxelinecreation.com</div>
+              <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
-            <a href="request-quote.html?service=posters" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Design My Feed</a>
           </div>
-        </div>
-      </div>
-
-      <!-- ── ROW 4: WIDE FEATURE ── -->
-
-      <!-- 8. LinkedIn B2B Campaign — WIDE -->
-      <div class="pf-card pf-card--wide" data-cat="mkt">
-        <div class="pf-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==" alt="LinkedIn Campaign" class="pf-card-img" />
-          <div class="pf-card-overlay">
-            <span class="pf-card-cat pf-card-cat--mkt">Digital Marketing</span>
-            <h3 class="pf-card-title">LinkedIn B2B Lead Generation — 120+ Qualified Leads in 30 Days</h3>
-            <div class="pf-card-sub">SaaS Company · UAE &amp; GCC</div>
-            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="pf-card-hover-info">
-            <h3 class="pf-card-hover-title">LinkedIn B2B Lead Generation</h3>
-            <p class="pf-card-hover-desc">Comprehensive LinkedIn advertising strategy for a UAE SaaS company targeting C-suite decision makers across GCC. Sponsored Content, InMail sequences, and Lead Gen Forms. Generated 120+ qualified leads in first 30 days at a cost per lead 40% below industry average.</p>
-            <div class="pf-card-hover-tags">
-              <span class="pf-card-hover-tag">LinkedIn Ads</span>
-              <span class="pf-card-hover-tag">B2B</span>
-              <span class="pf-card-hover-tag">Lead Gen Forms</span>
-              <span class="pf-card-hover-tag">120+ Leads/mo</span>
-              <span class="pf-card-hover-tag">SaaS</span>
+        </a>
+        <a href="https://devaluxuryproperties.com/" target="_blank" rel="noopener" class="pf-card pf-web-card" data-cat="web">
+          <div class="pf-card-img-wrap">
+            <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-10-at-12.03.26-PM-min-1.jpg" alt="Deva Luxury Properties website" class="pf-card-img" loading="lazy" />
+            <span class="pf-card-cat pf-card-cat--web">Website</span>
+            <div class="pf-card-overlay">
+              <h3 class="pf-card-title">Deva Luxury Properties</h3>
+              <div class="pf-card-sub">devaluxuryproperties.com</div>
+              <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
-            <a href="request-quote.html?service=linkedin-ads" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Launch LinkedIn Ads</a>
           </div>
-        </div>
-      </div>
-
-      <!-- ── ROW 5: THIRD + THIRD + THIRD ── -->
-
-      <!-- 9. UGC Content -->
-      <div class="pf-card pf-card--third" data-cat="cnt">
-        <div class="pf-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&auto=format&fit=crop&q=80" alt="UGC Content" class="pf-card-img" />
-          <div class="pf-card-overlay">
-            <span class="pf-card-cat pf-card-cat--cnt">Content Creation</span>
-            <h3 class="pf-card-title">UGC Video Series</h3>
-            <div class="pf-card-sub">Beauty Brand · UAE</div>
-            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="pf-card-hover-info">
-            <h3 class="pf-card-hover-title">UGC Video Series</h3>
-            <p class="pf-card-hover-desc">12-video UGC series for a UAE beauty brand — authentic product reviews, tutorials, and unboxings in three languages. Outperformed branded content by 4.2× on engagement.</p>
-            <div class="pf-card-hover-tags">
-              <span class="pf-card-hover-tag">UGC</span>
-              <span class="pf-card-hover-tag">Video Series</span>
-              <span class="pf-card-hover-tag">Beauty</span>
+        </a>
+        <a href="https://www.elgato-world.com/" target="_blank" rel="noopener" class="pf-card pf-web-card" data-cat="web">
+          <div class="pf-card-img-wrap">
+            <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/elgato.jpg" alt="Elgato Restaurant website" class="pf-card-img" loading="lazy" />
+            <span class="pf-card-cat pf-card-cat--web">Website</span>
+            <div class="pf-card-overlay">
+              <h3 class="pf-card-title">Elgato Restaurant</h3>
+              <div class="pf-card-sub">elgato-world.com</div>
+              <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
-            <a href="request-quote.html?service=ugc" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Create UGC</a>
           </div>
-        </div>
-      </div>
-
-      <!-- 10. Android App -->
-      <div class="pf-card pf-card--third" data-cat="web">
-        <div class="pf-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&auto=format&fit=crop&q=80" alt="Android App" class="pf-card-img" />
-          <div class="pf-card-overlay">
-            <span class="pf-card-cat pf-card-cat--web">App Development</span>
-            <h3 class="pf-card-title">Android Booking App</h3>
-            <div class="pf-card-sub">Hospitality Group · Dubai</div>
-            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="pf-card-hover-info">
-            <h3 class="pf-card-hover-title">Android Booking App</h3>
-            <p class="pf-card-hover-desc">Native Android booking application for a Dubai hospitality group — multilingual (EN/AR), real-time availability, Stripe payments, loyalty points system. 4.8★ on Google Play.</p>
-            <div class="pf-card-hover-tags">
-              <span class="pf-card-hover-tag">Android</span>
-              <span class="pf-card-hover-tag">Multilingual</span>
-              <span class="pf-card-hover-tag">Payments</span>
+        </a>
+        <a href="https://majdxb.com/" target="_blank" rel="noopener" class="pf-card pf-web-card" data-cat="web">
+          <div class="pf-card-img-wrap">
+            <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/maj.jpg" alt="Maj Properties website" class="pf-card-img" loading="lazy" />
+            <span class="pf-card-cat pf-card-cat--web">Website</span>
+            <div class="pf-card-overlay">
+              <h3 class="pf-card-title">Maj Properties</h3>
+              <div class="pf-card-sub">majdxb.com</div>
+              <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
-            <a href="request-quote.html?service=android-app" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Build Android App</a>
           </div>
-        </div>
-      </div>
-
-      <!-- 11. 3D Design -->
-      <div class="pf-card pf-card--third" data-cat="dsn">
-        <div class="pf-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80" alt="3D Design" class="pf-card-img" />
-          <div class="pf-card-overlay">
-            <span class="pf-card-cat pf-card-cat--dsn">Graphic Design</span>
-            <h3 class="pf-card-title">3D Product Visualisation</h3>
-            <div class="pf-card-sub">Luxury Goods · GCC</div>
-            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="pf-card-hover-info">
-            <h3 class="pf-card-hover-title">3D Product Visualisation</h3>
-            <p class="pf-card-hover-desc">Photorealistic 3D renders for a luxury goods company — 360° product views, lifestyle scenes, and animated turntables for web and social. Eliminated need for full photo shoot, saving 65% in production costs.</p>
-            <div class="pf-card-hover-tags">
-              <span class="pf-card-hover-tag">3D Design</span>
-              <span class="pf-card-hover-tag">Product Viz</span>
-              <span class="pf-card-hover-tag">Animation</span>
+        </a>
+        <a href="https://alsafeercarrental.com/" target="_blank" rel="noopener" class="pf-card pf-web-card" data-cat="web">
+          <div class="pf-card-img-wrap">
+            <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Al-safeer.jpg" alt="Alsafeer Car Rental website" class="pf-card-img" loading="lazy" />
+            <span class="pf-card-cat pf-card-cat--web">Website</span>
+            <div class="pf-card-overlay">
+              <h3 class="pf-card-title">Alsafeer Car Rental</h3>
+              <div class="pf-card-sub">alsafeercarrental.com</div>
+              <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
-            <a href="request-quote.html?service=3d-design" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Get 3D Designs</a>
           </div>
-        </div>
-      </div>
-
-      <!-- ── ROW 6: LG + LG ── -->
-
-      <!-- 12. SEO & Content Strategy — LG -->
-      <div class="pf-card pf-card--lg" data-cat="mkt">
-        <div class="pf-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&auto=format&fit=crop&q=80" alt="SEO" class="pf-card-img" />
-          <div class="pf-card-overlay">
-            <span class="pf-card-cat pf-card-cat--mkt">Digital Marketing</span>
-            <h3 class="pf-card-title">SEO — From 0 to 8K Monthly Visits</h3>
-            <div class="pf-card-sub">Legal Firm · UAE</div>
-            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="pf-card-hover-info">
-            <h3 class="pf-card-hover-title">SEO — From 0 to 8K Monthly Visits</h3>
-            <p class="pf-card-hover-desc">Complete SEO overhaul for a UAE legal firm — technical audit, 40+ pages of optimised content, backlink building, and local SEO. Grew from 0 to 8,000 monthly organic visitors in 6 months. Now ranking #1 for 18 target keywords.</p>
-            <div class="pf-card-hover-tags">
-              <span class="pf-card-hover-tag">SEO</span>
-              <span class="pf-card-hover-tag">Content</span>
-              <span class="pf-card-hover-tag">Link Building</span>
-              <span class="pf-card-hover-tag">8K Visits/mo</span>
+        </a>
+        <a href="https://www.kit51.com/" target="_blank" rel="noopener" class="pf-card pf-web-card" data-cat="web">
+          <div class="pf-card-img-wrap">
+            <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/kit.jpg" alt="Kit 51 website" class="pf-card-img" loading="lazy" />
+            <span class="pf-card-cat pf-card-cat--web">Website</span>
+            <div class="pf-card-overlay">
+              <h3 class="pf-card-title">Kit 51</h3>
+              <div class="pf-card-sub">kit51.com</div>
+              <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
-            <a href="request-quote.html?service=seo" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Grow Organically</a>
           </div>
-        </div>
-      </div>
-
-      <!-- 13. Video Production — LG -->
-      <div class="pf-card pf-card--lg" data-cat="cnt">
-        <div class="pf-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&auto=format&fit=crop&q=80" alt="Video Production" class="pf-card-img" />
-          <div class="pf-card-overlay">
-            <span class="pf-card-cat pf-card-cat--cnt">Content Creation</span>
-            <h3 class="pf-card-title">Brand Film &amp; TVC Production</h3>
-            <div class="pf-card-sub">Automotive Brand · UAE</div>
-            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="pf-card-hover-info">
-            <h3 class="pf-card-hover-title">Brand Film &amp; TVC Production</h3>
-            <p class="pf-card-hover-desc">Full-production brand film and 30-second TVC for a UAE automotive brand. Concept, scripting, 2-day shoot, grade, and post-production. Broadcast-ready and cut for social — 1.8M YouTube views in 2 weeks.</p>
-            <div class="pf-card-hover-tags">
-              <span class="pf-card-hover-tag">Video Production</span>
-              <span class="pf-card-hover-tag">TVC</span>
-              <span class="pf-card-hover-tag">1.8M Views</span>
-              <span class="pf-card-hover-tag">Automotive</span>
+        </a>
+        <a href="https://eastafricapetroleum.com/" target="_blank" rel="noopener" class="pf-card pf-web-card" data-cat="web">
+          <div class="pf-card-img-wrap">
+            <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/east.jpg" alt="East Africa Petroleum website" class="pf-card-img" loading="lazy" />
+            <span class="pf-card-cat pf-card-cat--web">Website</span>
+            <div class="pf-card-overlay">
+              <h3 class="pf-card-title">East Africa Petroleum</h3>
+              <div class="pf-card-sub">eastafricapetroleum.com</div>
+              <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
-            <a href="request-quote.html?service=video-creation" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Produce My Video</a>
           </div>
-        </div>
-      </div>
-
-      <!-- ── ROW 7: SM + SM + SM ── -->
-
-      <!-- 14. Chatbot Dev -->
-      <div class="pf-card pf-card--sm" data-cat="web">
-        <div class="pf-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&auto=format&fit=crop&q=80" alt="Chatbot" class="pf-card-img" />
-          <div class="pf-card-overlay">
-            <span class="pf-card-cat pf-card-cat--web">Web Development</span>
-            <h3 class="pf-card-title">AI Customer Support Chatbot</h3>
-            <div class="pf-card-sub">Retail Chain · GCC</div>
-            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="pf-card-hover-info">
-            <h3 class="pf-card-hover-title">AI Customer Support Chatbot</h3>
-            <p class="pf-card-hover-desc">GPT-powered chatbot for a GCC retail chain — handling 70% of support queries automatically on WhatsApp and web. Reduced support costs by 45% and response time from 4 hours to under 2 minutes.</p>
-            <div class="pf-card-hover-tags">
-              <span class="pf-card-hover-tag">Chatbot</span>
-              <span class="pf-card-hover-tag">WhatsApp</span>
-              <span class="pf-card-hover-tag">AI/GPT</span>
+        </a>
+        <a href="https://ibaraconsultancy.com/business-setup-in-dubai-uae/" target="_blank" rel="noopener" class="pf-card pf-web-card" data-cat="web">
+          <div class="pf-card-img-wrap">
+            <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/Ibara.jpg" alt="Ibara Consultancy website" class="pf-card-img" loading="lazy" />
+            <span class="pf-card-cat pf-card-cat--web">Website</span>
+            <div class="pf-card-overlay">
+              <h3 class="pf-card-title">Ibara Consultancy</h3>
+              <div class="pf-card-sub">ibaraconsultancy.com</div>
+              <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
-            <a href="request-quote.html?service=chatbot" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Build Chatbot</a>
           </div>
-        </div>
-      </div>
-
-      <!-- 15. AI Content -->
-      <div class="pf-card pf-card--sm" data-cat="cnt">
-        <div class="pf-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1677756119517-756a188d2d94?w=600&auto=format&fit=crop&q=80" alt="AI Content" class="pf-card-img" />
-          <div class="pf-card-overlay">
-            <span class="pf-card-cat pf-card-cat--cnt">Content Creation</span>
-            <h3 class="pf-card-title">AI-Powered Content at Scale</h3>
-            <div class="pf-card-sub">Media Company · MENA</div>
-            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="pf-card-hover-info">
-            <h3 class="pf-card-hover-title">AI-Powered Content at Scale</h3>
-            <p class="pf-card-hover-desc">AI-assisted content strategy for a MENA media company — 50 SEO articles, 200 social captions, and 12 email newsletters per month. Consistent brand voice, 10× faster production, measurable organic growth.</p>
-            <div class="pf-card-hover-tags">
-              <span class="pf-card-hover-tag">AI Content</span>
-              <span class="pf-card-hover-tag">SEO Articles</span>
-              <span class="pf-card-hover-tag">Scale</span>
+        </a>
+        <a href="https://lamarca.ae/" target="_blank" rel="noopener" class="pf-card pf-web-card" data-cat="web">
+          <div class="pf-card-img-wrap">
+            <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/lamarca.jpg" alt="Lamarca Online Store website" class="pf-card-img" loading="lazy" />
+            <span class="pf-card-cat pf-card-cat--web">Website</span>
+            <div class="pf-card-overlay">
+              <h3 class="pf-card-title">Lamarca Online Store</h3>
+              <div class="pf-card-sub">lamarca.ae</div>
+              <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
-            <a href="request-quote.html?service=ai-content" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Scale My Content</a>
           </div>
-        </div>
-      </div>
-
-      <!-- 16. Snapchat Ads -->
-      <div class="pf-card pf-card--sm" data-cat="mkt">
-        <div class="pf-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1611162617263-4ec3060a058e?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==" alt="Snapchat Ads" class="pf-card-img" />
-          <div class="pf-card-overlay">
-            <span class="pf-card-cat pf-card-cat--mkt">Digital Marketing</span>
-            <h3 class="pf-card-title">Snapchat Awareness Campaign</h3>
-            <div class="pf-card-sub">QSR Brand · UAE</div>
-            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="pf-card-hover-info">
-            <h3 class="pf-card-hover-title">Snapchat Awareness Campaign</h3>
-            <p class="pf-card-hover-desc">National Snapchat AR Lens + Story Ads campaign for a UAE QSR brand during Ramadan. Reached 2.1M unique UAE users, 4.7M impressions, and drove 38% uplift in-store visits during the campaign period.</p>
-            <div class="pf-card-hover-tags">
-              <span class="pf-card-hover-tag">Snapchat Ads</span>
-              <span class="pf-card-hover-tag">AR Lens</span>
-              <span class="pf-card-hover-tag">2.1M Reach</span>
+        </a>
+        <a href="https://q2wash.com/" target="_blank" rel="noopener" class="pf-card pf-web-card" data-cat="web">
+          <div class="pf-card-img-wrap">
+            <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/q2wash.jpg" alt="Geo Wash website" class="pf-card-img" loading="lazy" />
+            <span class="pf-card-cat pf-card-cat--web">Website</span>
+            <div class="pf-card-overlay">
+              <h3 class="pf-card-title">Geo Wash</h3>
+              <div class="pf-card-sub">q2wash.com</div>
+              <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
-            <a href="request-quote.html?service=snapchat-ads" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Run Snap Campaign</a>
           </div>
-        </div>
-      </div>
-
-      <!-- ── ROW 8: MD + MD + MD ── -->
-
-      <!-- 17. Software Dev — MD -->
-      <div class="pf-card pf-card--md" data-cat="web">
-        <div class="pf-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700&auto=format&fit=crop&q=80" alt="Software Development" class="pf-card-img" />
-          <div class="pf-card-overlay">
-            <span class="pf-card-cat pf-card-cat--web">Software Development</span>
-            <h3 class="pf-card-title">Custom CRM &amp; Dashboard</h3>
-            <div class="pf-card-sub">Finance Firm · UAE</div>
-            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="pf-card-hover-info">
-            <h3 class="pf-card-hover-title">Custom CRM &amp; Dashboard</h3>
-            <p class="pf-card-hover-desc">Bespoke CRM and analytics dashboard for a UAE financial advisory firm — client pipeline management, automated follow-up workflows, reporting suite, and role-based access control. Replaced 3 separate tools with one unified platform.</p>
-            <div class="pf-card-hover-tags">
-              <span class="pf-card-hover-tag">CRM</span>
-              <span class="pf-card-hover-tag">Dashboard</span>
-              <span class="pf-card-hover-tag">Automation</span>
+        </a>
+        <a href="https://www.riceplus-world.com/" target="_blank" rel="noopener" class="pf-card pf-web-card" data-cat="web">
+          <div class="pf-card-img-wrap">
+            <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/ricwe.jpg" alt="Riceplus Restaurant website" class="pf-card-img" loading="lazy" />
+            <span class="pf-card-cat pf-card-cat--web">Website</span>
+            <div class="pf-card-overlay">
+              <h3 class="pf-card-title">Riceplus Restaurant</h3>
+              <div class="pf-card-sub">riceplus-world.com</div>
+              <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
-            <a href="request-quote.html?service=software-dev" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Build Custom Software</a>
           </div>
-        </div>
-      </div>
-
-      <!-- 18. Image Retouching / Branding — MD -->
-      <div class="pf-card pf-card--md" data-cat="dsn">
-        <div class="pf-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1633533452148-a9657d2c9a5f?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==" alt="Brand Identity" class="pf-card-img" />
-          <div class="pf-card-overlay">
-            <span class="pf-card-cat pf-card-cat--dsn">Graphic Design</span>
-            <h3 class="pf-card-title">Full Brand Identity System</h3>
-            <div class="pf-card-sub">Tech Startup · Dubai</div>
-            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="pf-card-hover-info">
-            <h3 class="pf-card-hover-title">Full Brand Identity System</h3>
-            <p class="pf-card-hover-desc">Complete brand creation for a Dubai tech startup — naming, logo, visual identity, tone of voice guide, pitch deck design, business cards, email signature, and full digital asset kit. Launch-ready in 3 weeks.</p>
-            <div class="pf-card-hover-tags">
-              <span class="pf-card-hover-tag">Brand Identity</span>
-              <span class="pf-card-hover-tag">Naming</span>
-              <span class="pf-card-hover-tag">Pitch Deck</span>
+        </a>
+        <a href="https://zimam.ae/" target="_blank" rel="noopener" class="pf-card pf-web-card" data-cat="web">
+          <div class="pf-card-img-wrap">
+            <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/zimam.jpg" alt="Zimam Online Store website" class="pf-card-img" loading="lazy" />
+            <span class="pf-card-cat pf-card-cat--web">Website</span>
+            <div class="pf-card-overlay">
+              <h3 class="pf-card-title">Zimam Online Store</h3>
+              <div class="pf-card-sub">zimam.ae</div>
+              <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
-            <a href="request-quote.html?service=brand-identity" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Build My Brand</a>
           </div>
-        </div>
+        </a>
+        <a href="https://ardalbatra.ae/" target="_blank" rel="noopener" class="pf-card pf-web-card" data-cat="web">
+          <div class="pf-card-img-wrap">
+            <img src="https://workportfolio.q2fm.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-10-at-11.36.24-AM-min-1.jpg" alt="Ard Al Batra Online Store website" class="pf-card-img" loading="lazy" />
+            <span class="pf-card-cat pf-card-cat--web">Website</span>
+            <div class="pf-card-overlay">
+              <h3 class="pf-card-title">Ard Al Batra Online Store</h3>
+              <div class="pf-card-sub">ardalbatra.ae</div>
+              <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </a>
+        <a href="https://homekeys.ae/" target="_blank" rel="noopener" class="pf-card pf-web-card" data-cat="web">
+          <div class="pf-card-img-wrap">
+            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/portfolio/homekeys.jpg" alt="Home Keys Real Estate website" class="pf-card-img" loading="lazy" />
+            <span class="pf-card-cat pf-card-cat--web">Website</span>
+            <div class="pf-card-overlay">
+              <h3 class="pf-card-title">Home Keys Real Estate</h3>
+              <div class="pf-card-sub">homekeys.ae</div>
+              <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.ilts.com/" target="_blank" rel="noopener" class="pf-card pf-web-card" data-cat="web">
+          <div class="pf-card-img-wrap">
+            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/portfolio/ilts.jpg" alt="ILTS — Lottery &amp; Gaming Solutions website" class="pf-card-img" loading="lazy" />
+            <span class="pf-card-cat pf-card-cat--web">Website</span>
+            <div class="pf-card-overlay">
+              <h3 class="pf-card-title">ILTS — Lottery &amp; Gaming Solutions</h3>
+              <div class="pf-card-sub">ilts.com</div>
+              <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </a>
       </div>
+    </div>
 
-      <!-- Empty state -->
-      <div class="pf-empty" id="pf-empty">
-        <i class="fa-solid fa-layer-group"></i>
-        <p>No projects found in this category yet.<br/>
-        <a href="/contact/" style="color:var(--blue-light);text-decoration:underline;">Talk to us about your project →</a></p>
+    <!-- Empty state -->
+    <div class="pf-empty" id="pf-empty">
+      <i class="fa-solid fa-layer-group"></i>
+      <p>No projects found in this category yet.<br/>
+      <a href="/contact/" style="color:var(--blue-light);text-decoration:underline;">Talk to us about your project →</a></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ CONTACT ════════════════════════════════════════════════ -->
+<section id="pf-contact">
+  <div class="container">
+    <div class="pf-group-head">
+      <div>
+        <div class="pf-group-eyebrow">Get in Touch</div>
+        <h2 class="pf-group-title">Contact Details</h2>
       </div>
-
-    </div><!-- /pf-grid -->
+      <p class="pf-group-desc">Like what you see? Reach Online Pro Max directly — we reply within 24 hours.</p>
+    </div>
+    <div class="pf-contact-grid">
+      <a href="tel:+971552594585" class="pf-contact-card">
+        <span class="pf-contact-icon"><i class="fa-solid fa-phone"></i></span>
+        <span class="pf-contact-label">Call Us</span>
+        <span class="pf-contact-value">+971 55 259 4585</span>
+      </a>
+      <a href="https://wa.me/971552594585?text=Hello%20Online%20Pro%20Max!" target="_blank" rel="noopener" class="pf-contact-card">
+        <span class="pf-contact-icon pf-contact-icon--wa"><i class="fa-brands fa-whatsapp"></i></span>
+        <span class="pf-contact-label">WhatsApp</span>
+        <span class="pf-contact-value">+971 55 259 4585</span>
+      </a>
+      <a href="mailto:contact@onlinepromax.com" class="pf-contact-card">
+        <span class="pf-contact-icon"><i class="fa-solid fa-envelope"></i></span>
+        <span class="pf-contact-label">Email</span>
+        <span class="pf-contact-value">contact@onlinepromax.com</span>
+      </a>
+      <div class="pf-contact-card">
+        <span class="pf-contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+        <span class="pf-contact-label">Address</span>
+        <span class="pf-contact-value">Churchill Tower, Business Bay, Dubai, UAE</span>
+      </div>
+    </div>
+    <div class="pf-contact-socials">
+      <span class="pf-contact-label">Follow Us</span>
+      <a href="https://www.instagram.com/onlinepromax" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/onlinepromax" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.linkedin.com/company/onlinepromax/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://x.com/onlinepromax" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.youtube.com/@onlinepromax" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
   </div>
 </section>
 
@@ -574,7 +665,6 @@ get_header();
     </div>
   </div>
 </section>
-
 
 
 <?php get_footer(); ?>

@@ -77,7 +77,7 @@
     <div class="top-bar-left">
       <a href="mailto:contact@onlinepromax.com"><i class="fa-solid fa-envelope"></i> contact@onlinepromax.com</a>
       <a href="tel:+971552594585"><i class="fa-solid fa-phone"></i> +971 55 259 4585</a>
-      <span><i class="fa-solid fa-location-dot"></i> Meydan Grandstand, 6th Floor, Dubai, UAE</span>
+      <span><i class="fa-solid fa-location-dot"></i> Churchill Tower, Business Bay, Dubai, UAE</span>
     </div>
     <div class="top-bar-right">
       <a href="https://www.facebook.com/onlinepromax" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>

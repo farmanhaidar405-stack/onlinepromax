@@ -39,7 +39,7 @@
       <div>
         <h4 class="footer-col-title">Get in Touch</h4>
         <div class="footer-address">
-          <p style="margin-bottom:.7rem;"><i class="fa-solid fa-location-dot" style="color:var(--blue-light);margin-right:.5rem;"></i>Meydan Grandstand, 6th Floor,<br/>Meydan Rd, Nad Al Sheba,<br/>Dubai, UAE</p>
+          <p style="margin-bottom:.7rem;"><i class="fa-solid fa-location-dot" style="color:var(--blue-light);margin-right:.5rem;"></i>Churchill Tower,<br/>Business Bay,<br/>Dubai, UAE</p>
           <p style="margin-bottom:.5rem;"><i class="fa-solid fa-phone" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="tel:+971552594585">+971 55 259 4585</a></p>
           <p><i class="fa-solid fa-envelope" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="mailto:contact@onlinepromax.com">contact@onlinepromax.com</a></p>
         </div>
